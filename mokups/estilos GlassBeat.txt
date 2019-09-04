@@ -1,0 +1,60 @@
+﻿Fuentes:
+Barlow Condensed Regular
+Barlow Condensed Medium
+Pacifico
+
+
+Fontsawsome:
+search
+shopping-bag
+user-circle
+instagram-brands
+facebook-brands
+paper-plane
+bars
+
+
+Colores:
+negro #000
+beige #bbb1af
+blanco #fff
+texto sobre banda beige:  #624a42
+Base de barra footer rgba(0, 0, 0, 0.5)
+textos sobre imagen #252525
+
+
+Bootstrap nav
+grid
+
+
+desktop
+categorias del shop:
+collares / pulseras / aros / otros
+4 cols (solo vamos a usar las 2 de la izquierda para imagenes y las dos de la derecha juntas para texto).
+
+
+últimas Creaciones
+6 cols
+
+
+tablet
+
+
+categorias del shop:
+collares / pulseras / aros / otros
+3 cols (solo vamos a usar las 2 de la izquierda para imagen y la de la derecha para texto).
+
+
+últimas Creaciones
+4 cols - 2 rows
+(suma 2 productos)
+
+
+mobile
+1 columna x categorias(sin margen ni padding)
+2 columnas (sin margen ni padding) para ultimas creaciones.
+texto
+
+
+Todas las cuentas de vidrio de GlassBeat fueron creadas artesanalmente con vidrio de murano, soplete y en algunos casos oro o plata.
+Cada pieza es especial y única, por este motivo puede haber variaciones entre las imágenes publicadas y la pieza real, aunque siempre conservarán su esencia y características principales.

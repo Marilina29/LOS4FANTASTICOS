@@ -46,10 +46,13 @@ $productos = [
   <?php include("head.php") ?>
   <body>
     <?php include("menu.php") ?>
-    <h1>Arte para usar...</h1>
-    <?php foreach ($imagenes as $key => $value): ?>
-      <a href="#"> <img src="<?= $value ?>" alt="IMAGEN DE ESE $value"> <p> <?= $key  ?></p> </a>
-    <?php endforeach ?>
+    <h1>Arte <br> para usar...</h1>
+
+        <?php foreach ($imagenes as $key => $value): ?>
+          <a class="fotos4" href="#"> <img src="<?= $value ?>" alt="IMAGEN DE ESE $value"> <p> <?= $key  ?></p> </a>
+        <?php endforeach ?>
+
+
     <div class="">
       <p>Todas las cuentas de vidrio de GlassBeat fueron creadas artesanalmente con vidrio de murano, soplete y en algunos casos de oro o plata.</p>
       <p>Cada pieza es especial y única, por este motivo puede haber variaciones entre las imagenes publicadas y la pieza real, aunque siempre conservaran su escencia y características principales.</p>
