@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title><?= $titulo ?></title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/62ba28ee55.js"></script>
+</head>
+  <body>
+    <!-- header / menu -->
+    <header>
+        <a class="logo" href="#"> <img src="../imagenes/glassBeat-logo.png" width="150" height="50"  alt="ACA VA EL LOGO"> </a>
+        <ul class="ulheader">
+          <li class="liheader"> <a class="aheader" href="#"> SHOP </a> </li>
+          <li class="liheader"> <a class="aheader" href="#"> HISTORIA </a> </li>
+          <li class="liheader"> <a class="aheader" href="#"> CONTACTO </a> </li>
+          <li class="liheader"> <a class="aheader" href="#"> ENVIOS </a> </li>
+        </ul>
+
+        <ul class="uliconos">
+          <li class="liconos"><i class="colorb fas fa-search"></i></li>
+          <li class="liconos"><i class="colorb fas fa-user-circle"></i></li>
+          <li class="liconos"><i class="colorb fas fa-shopping-bag"></i></li>
+        </ul>
+    </header>
+    <!-- aca empieza el contenido -->
+    <div class="contenedor">
+
+      <h1>Arte <br> para usar...</h1>
+    <!-- categorias del shop -->
+      <div class="mainHome">
+        <div class="grupoCategorias">
+
+            <div class="categorias">
+                <a href="#"> <img class="fotos4" src="../imagenes/collares.jpg" alt="collares">
+                <p>
+              collares</p> </a>
+            </div>
+            <div class="categorias">
+                <a href="#"> <img class="fotos4" src="../imagenes/pulseras.jpg" alt="collares">
+                <p>
+              pulseras</p> </a>
+            </div>
+            <div class="categorias">
+                <a href="#"> <img class="fotos4" src="../imagenes/aros.jpg" alt="collares">
+                <p>
+              aros</p> </a>
+            </div>
+            <div class="categorias">
+                <a href="#"> <img class="fotos4" src="../imagenes/otros.jpg" alt="collares">
+                <p>
+              otros</p> </a>
+            </div>
+        </div>
+
+        <div class="textoHome">
+          <p>Todas las cuentas de vidrio de GlassBeat fueron creadas artesanalmente con vidrio de murano, soplete y en algunos casos de oro o plata.</p>
+          <p>Cada pieza es especial y única, por este motivo puede haber variaciones entre las imagenes publicadas y la pieza real, aunque siempre conservaran su escencia y características principales.</p>
+        </div>
+      </div>
+      <div class="">
+        <h2>Últimas creaciones</h2>
+        <div class="">
+          <?php for ($i=0; $i < 6 ; $i++): ?>
+            <a href="#"> <img src="<?= $productos[$i]["imagen"] ?>" alt="IMAGEN DE PRODUCTO"> <p><?= $productos[$i]["nombre"] . " " . $productos[$i]["precio"] ?> </p> </a>
+            <a href="#"> <button type="button" name="button">COMPRAR</button> </a>
+          <?php endfor ?>
+        </div>
+      </div>
+      <div class="">
+        <h2>Envíos</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <?php include("footer.php") ?>
+
+    </div>
+  </body>
+</html>
