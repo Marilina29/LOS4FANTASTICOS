@@ -4,6 +4,15 @@
   text-decoration: none;
   list-style: none;
 }
+body{
+  background-image: url(../imagenes/fondo-glassbeat.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+
+
+
+}
 header{
   background-color: #000;
   overflow: hidden;
