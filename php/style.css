@@ -1,4 +1,5 @@
 * {
+  box-sizing:border-box;
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -8,7 +9,6 @@ body{
   background-image: url(../imagenes/fondo-glassbeat.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-
 
 
 
@@ -42,7 +42,7 @@ header{
 
 .aheader{
   color: white;
-  font-family: Pacifico;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 .colorb{
