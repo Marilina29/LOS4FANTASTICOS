@@ -83,10 +83,13 @@
       </div>
   </div>
   <!-- footer -->
-<?php include('footer.php') ?>
+  <?php include('footer.php') ?>
       <div >
         <img class="fondoCont" src="../imagenes/fondo1024.jpg" alt="">
       </div>
     </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <?php include('javascript.php') ?>
   </body>
 </html>
