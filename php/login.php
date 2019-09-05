@@ -18,8 +18,8 @@
   <br>
   <button class="boton" type="reset" name="borrar">BORRAR</button>
   <button class="boton" type="submit" name="enviar">ENTRAR</button>
-<div class="atencion">
-  REGISTRATE
+<div >
+<a class="atencion" href="register.php"> REGISTRATE </a>
 </div>
   </form>
 </div>

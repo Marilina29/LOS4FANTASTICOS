@@ -236,7 +236,7 @@ h2{
   display: inline-block;
   width: 80%;
 }
-<<<<<<< HEAD
+/*HEAD*/
 /* tablet*/
 @media (max-width:800px){
   .aheader{
@@ -255,7 +255,30 @@ h2{
 .cajita{
   width: 32%;
 }
-
+/*FOOTER*/
+.ulheader {
+  display: none;
+}
+.navbar{
+  display: inline;
+}
+.fa-bars{
+  color: white;
+}
+.uliconos {
+  width: 130px;
+}
+footer{
+  display:block;
+  width: 100%;
+  font-size: 1rem;
+  text-align: right;
+  position: relative;
+  bottom: 0px;
+}
+footer ul{
+  margin: 0 auto;
+}
 }
 /* mobile*/
 @media (max-width:460px){
@@ -283,7 +306,28 @@ h2{
   .cajita{
     width: 50%;
   }
-=======
+
+  .ulheader {
+    display: none;
+  }
+  .naviconos{
+    display: none;
+  }
+  .uliconos {
+    width: 50px;
+    margin-top: 25px;
+    margin-right: 10px;
+  }
+  .logo img{
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    }
+  .logo{
+    margin-left: 10px;
+  }
+
+/*REGISTRO*/
 
 div.botones {
   padding-top: 20px;
@@ -316,5 +360,5 @@ form button.boton,
 ::placeholder {
   color: white;
   font-size: 20px;
->>>>>>> e35e200a2938aae1f5065735ee194895780f2a9d
+}
 }
