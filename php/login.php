@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <?php include("head.php") ?>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
 <body class="">
+  <?php include("head.php") ?>
   <?php include("menu.php") ?>
-<div class="formulario">
-  <div class="login">
+
+<div class="formulario formregistro">
+  <div class="cabecera">
     LOGIN
   </div>
   <form action="index.php" method="post">
@@ -12,8 +16,8 @@
   <br>
   <input class="email" type="password" name="password" placeholder="contraseña">
   <br>
-  <button class="bu" type="reset" name="borrar">BORRAR</button>
-  <button class="bu" type="submit" name="enviar">ENVIAR</button>
+  <button class="boton" type="reset" name="borrar">BORRAR</button>
+  <button class="boton" type="submit" name="enviar">ENTRAR</button>
 <div class="atencion">
   REGISTRATE
 </div>
