@@ -194,25 +194,47 @@ h2{
   padding-top: 100px;
   margin: 0 auto;
   line-height: 60px;
-  width: 30%;
+  width: 50%;
   text-align: center;
   background-color: white;
 }
 .formulario input{
-  margin: 20px;
+  margin: 10px;
   padding: 20px;
   width: 80%;
 }
 .formulario button{
   width: 40%;
-  padding: 20px;
+  padding: 10px;
 }
 .atencion{
   background-color: black;
-  padding: 10px 50px;
+  padding: 2px 50px;
   color: white;
   margin: 20px;
   text-align: center;
   display: inline-block;
   width: 80%;
+}
+.login{
+  background-color: #624a42;
+  color: #bbb1af;
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  font-size: 20px;
+  margin-bottom: 30px;
+
+}
+::placeholder{color: white;
+font-size: 20px;}
+.email{
+  background-color: #bbb1af;
+}
+.bu{
+  margin-top: 30px;
+  background-color: #624a42;
+  color: #bbb1af;
+  font-size: 20px;
+
 }

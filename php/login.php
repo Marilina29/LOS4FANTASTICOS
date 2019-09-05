@@ -4,16 +4,16 @@
 <body class="">
   <?php include("menu.php") ?>
 <div class="formulario">
-  <div class="">
+  <div class="login">
     LOGIN
   </div>
   <form action="index.php" method="post">
-  <input type="email" name="e-mail" placeholder="email">
+  <input class="email" type="email" name="e-mail" placeholder="email">
   <br>
-  <input type="password" name="password" placeholder="contraseña">
+  <input class="email" type="password" name="password" placeholder="contraseña">
   <br>
-  <button type="reset" name="borrar">BORRAR</button>
-  <button type="submit" name="enviar">ENVIAR</button>
+  <button class="bu" type="reset" name="borrar">BORRAR</button>
+  <button class="bu" type="submit" name="enviar">ENVIAR</button>
 <div class="atencion">
   REGISTRATE
 </div>
