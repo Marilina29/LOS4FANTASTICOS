@@ -96,6 +96,7 @@ footer a, footer li{
 }
 footer ul{
   display: inline-block;
+      margin-block-end: 0;
 }
 /* home */
 .marginados{
