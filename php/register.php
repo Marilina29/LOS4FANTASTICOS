@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<?php include("menu.php") ?>
-
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
@@ -10,32 +8,36 @@
       <title>REGISTRO</title>
 </head>
   <body>
+    <?php include("head.php") ?>
+    <?php include("menu.php") ?>
 
 
-    <form class="" action="practica.html" method="post">
 
-        <p class="formulario">
-          <input type="" name="nombre" value="" placeholder="nombre" required="">
-        </p>
+<div class="formulario formregistro">
+  <form class="" action="" method="post">
 
-        <p class="formulario">
-          <input type="" name="apellido" value="" placeholder="apellido" required="">
-        </p>
+      <div class="cabecera">
+        REGISTRO
+      </div>
 
-        <p class="formulario">
-            <input type="email" name="email" value="" placeholder="email" required="">
-        </p>
+    <input type="" name="nombre" value="" placeholder="nombre" required="">
 
-        <p class="formulario">
-            <input id="contraseña" type="password" name="contraseña" value="" placeholder="contraseña" required="">
-        </p>
-
-          <button class="boton" type="reset" name="button">BORRAR</button>
-          <button class="boton" type="submit" name="button">ENVIAR</button>
+      <input type="" name="apellido" value="" placeholder="apellido" required="">
 
 
-        </form>
+        <input type="email" name="email" value="" placeholder="email" required="">
 
+
+        <input id="contraseña" type="password" name="contraseña" value="" placeholder="contraseña" required="">
+
+
+        <button class="boton" type="reset" name="button">BORRAR</button>
+        <button class="boton" type="submit" name="button">ENVIAR</button>
+
+  </form>
+</div>
+
+<?php include('footer.php') ?>
 
   </body>
 </html>

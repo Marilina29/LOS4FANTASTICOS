@@ -23,7 +23,7 @@ bars
 
 Colores:
 negro #000
-beige #bbb1af
+  beige #bbb1af
 blanco #fff
 texto sobre banda beige:  #624a42
 Base de barra footer rgba(0, 0, 0, 0.5)
@@ -57,4 +57,3 @@ texto
 
 Todas las cuentas de vidrio de GlassBeat fueron creadas artesanalmente con vidrio de murano, soplete y en algunos casos oro o plata.
 Cada pieza es especial y única, por este motivo puede haber variaciones entre las imágenes publicadas y la pieza real, aunque siempre conservarán su esencia y características principales.
-
