@@ -6,7 +6,7 @@
     <!-- header / menu -->
     <?php include("menu.php") ?>
     <!-- aca empieza el contenido -->
-  <h1 class="marginados">Arte <br> para usar...</h1>
+  <h1>Arte <br> para usar...</h1>
 
 
     <!-- categorias del shop -->
@@ -43,37 +43,25 @@
       <!-- ultimas creaciones -->
       <div class="ultimasCreaciones">
         <h2>Últimas creaciones</h2>
-    <div class="conjuntoUC marginados">
+    <div class="conjuntoUC">
       <!-- este es un destacado -->
-      <div class="">
-        <a href="#"> <img class="destacadosHome" src="../imagenes/prod_1-flor.jpg" alt="IMAGEN DE PRODUCTO"> <p>Flor <span class="precio"> $350</span></p> </a>
-          <a class="botonComprar" href="#"> COMPRAR </a>
+      <div class="cajita">
+        <a href="#"> <img class="destacadosHome" src="../imagenes/prod_5-azulera.jpg" alt="IMAGEN DE PRODUCTO"> <p>Azulera <span class="precio"> $200</span> <br> COMPRAR </p></a>
       </div>
-      <!-- este es un destacado -->
-      <div class="">
-        <a href="#"> <img class="destacadosHome" src="../imagenes/prod_2-verdis.jpg" alt="IMAGEN DE PRODUCTO"> <p>Verdis <span class="precio"> $250</span></p> </a>
-          <a class="botonComprar" href="#"> COMPRAR </a>
+      <div class="cajita">
+        <a href="#"> <img class="destacadosHome" src="../imagenes/prod_5-azulera.jpg" alt="IMAGEN DE PRODUCTO"> <p>Azulera <span class="precio"> $200</span> <br> COMPRAR </p></a>
       </div>
-      <!-- este es un destacado -->
-      <div class="">
-        <a href="#"> <img class="destacadosHome" src="../imagenes/prod_3-blackSil.jpg" alt="IMAGEN DE PRODUCTO"> <p> Black Sil <span class="precio"> $250</span></p> </a>
-          <a class="botonComprar" href="#"> COMPRAR </a>
+      <div class="cajita">
+        <a href="#"> <img class="destacadosHome" src="../imagenes/prod_5-azulera.jpg" alt="IMAGEN DE PRODUCTO"> <p>Azulera <span class="precio"> $200</span> <br> COMPRAR </p></a>
       </div>
-      <!-- este es un destacado -->
-      <div class="">
-        <a href="#"> <img class="destacadosHome" src="../imagenes/prod_4-primavera.jpg" alt="IMAGEN DE PRODUCTO"> <p>Primavera <span class="precio"> $650</span></p> </a>
-          <a class="botonComprar" href="#"> COMPRAR </a>
+      <div class="cajita">
+        <a href="#"> <img class="destacadosHome" src="../imagenes/prod_5-azulera.jpg" alt="IMAGEN DE PRODUCTO"> <p>Azulera <span class="precio"> $200</span> <br> COMPRAR </p></a>
       </div>
-      <!-- este es un destacado -->
-      <div class="">
-        <a href="#"> <img class="destacadosHome" src="../imagenes/prod_5-azulera.jpg" alt="IMAGEN DE PRODUCTO"> <p>Azulera <span class="precio"> $200</span></p> </a>
-          <a class="botonComprar" href="#"> COMPRAR </a>
+      <div class="cajita">
+        <a href="#"> <img class="destacadosHome" src="../imagenes/prod_5-azulera.jpg" alt="IMAGEN DE PRODUCTO"> <p>Azulera <span class="precio"> $200</span> <br> COMPRAR </p></a>
       </div>
-      <!-- este es un destacado -->
-      <div class="">
-        <a href="#"> <img class="destacadosHome" src="../imagenes/prod_6-fusion.jpg" alt="IMAGEN DE PRODUCTO">  </a>
-        <p>Fusión <span class="precio"> $250</span></p>
-          <a class="botonComprar" href="#"> COMPRAR </a>
+      <div class="cajita">
+        <a href="#"> <img class="destacadosHome" src="../imagenes/prod_5-azulera.jpg" alt="IMAGEN DE PRODUCTO"> <p>Azulera <span class="precio"> $200</span> <br> COMPRAR </p></a>
       </div>
     </div>
       </div>

@@ -37,7 +37,7 @@ a{
 .ulheader{
   padding-top: 27px;
   margin-left: 0px;
-  width: 25%;
+  width: 50%;
   padding-left: 10px;
 
   float: left;
@@ -106,6 +106,7 @@ h1{
   margin-bottom: 20px;
   font-size: 3.8rem;
   line-height: 3rem;
+  margin-left: 40px;
 }
 .mainHome{
   display: flex;
@@ -119,10 +120,10 @@ h1{
 
 }
 .grupoCategorias{
-  overflow: hidden;
-  float: left;
-  width: 45%;
+  width: 50%;
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .fotos4{
   display: block;
@@ -134,9 +135,8 @@ h1{
   text-align: center;
   font-size: 1.5rem;
   color: #624a42;
-  width: 50%;
+  width: 47%;
   padding: 10px;
-  float: left;
 }
 .categorias a{
   color: #252525;
@@ -159,6 +159,7 @@ h1{
   text-align: center;
   background-color: white;
   padding: 0px 0px 50px 0px;
+  flex-wrap: wrap;
 }
 h2{
   font-family: 'Pacifico', cursive;
@@ -182,6 +183,13 @@ h2{
 .conjuntoUC{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 40px;
+}
+.cajita{
+  width: 16.5%;
+  flex-wrap: wrap;
 }
 .envios{
   text-align: center;
@@ -215,4 +223,51 @@ h2{
   text-align: center;
   display: inline-block;
   width: 80%;
+}
+/* tablet*/
+@media (max-width:800px){
+  .aheader{
+    font-size: 0.9rem;
+}
+.grupoCategorias{
+  width: 66%;
+}
+.textoHome{
+  width: 34%;
+}
+.banda{
+  position: relative;
+  top:-225px;
+}
+.cajita{
+  width: 32%;
+}
+
+}
+/* mobile*/
+@media (max-width:460px){
+  h1{
+    padding: 100px 0 0 0;
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+  .marginados{
+    margin:0;
+  }
+  .mainHome{
+    position: inherit;
+    bottom: auto;
+    top: 40px;
+    width: 100%
+  }
+  .grupoCategorias{
+    width: 100%;
+  }
+  .categorias{
+    width: 100%;
+
+  }
+  .cajita{
+    width: 50%;
+  }
 }
