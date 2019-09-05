@@ -1,3 +1,4 @@
+/* estilos generales */
 * {
   box-sizing:border-box;
   padding: 0;
@@ -7,19 +8,19 @@
   font-family: 'Barlow Condensed', sans-serif;
 }
 body{
-  background-image: url(../imagenes/fondo1024.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
   background-color: #bbb1af;
-
-
-
 }
+/* menu */
 header{
+  position: fixed;
+  width: 100%;
+  margin: 0;
   background-color: #000;
   overflow: hidden;
-  margin-right: 20px;
-
+  z-index: 100;
+}
+a{
+  color: #252525;
 }
 .logo {
   display: block;
@@ -60,29 +61,68 @@ header{
   display: block;
   float: right;
   margin-top: 30px;
-  margin-right: 30px;
+  margin-right: 40px;
 }
-.liconos{
+.uliconos li{
   color: white;
   font-size: 1.2rem;
 }
-.contenedor{
-  margin-left: 40px;
+.fondoCont{
+  z-index: -1;
+  position: fixed;
+  top: 10px;
+  width: 100%;
+}
+/* footer */
+footer{
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 50%;
+  color: white;
+  font-size: 1rem;
+  text-align: right;
+  padding-right: 40px;
+  position: fixed;
+  bottom: 15px;
+  right: 0px;
+  z-index: 100;
+}
+footer a, footer li{
+  color: white;
+  float: left;
+  padding: 5px 7px;
+}
+footer ul{
+  display: inline-block;
+}
+/* home */
+.marginados{
+  margin: 0 40px;
 }
 h1{
   display: block;
   font-family: 'Pacifico', cursive;
-  padding: 200px 0px 100px 30px;
+  padding: 200px 0px 0px 0px;
+  margin-bottom: 20px;
   font-size: 3.8rem;
   line-height: 3rem;
 }
 .mainHome{
   display: flex;
+  position: relative;
+  bottom: -170px;
+  z-index: 10;
+}
+.banda{
+    background-color: #bbb1af;
+    text-align: right;
+
 }
 .grupoCategorias{
   overflow: hidden;
   float: left;
-  width: 80%;
+  width: 45%;
+  margin-bottom: 20px;
 }
 .fotos4{
   display: block;
@@ -101,20 +141,78 @@ h1{
 .categorias a{
   color: #252525;
 }
+.fotos4{
+    border: 1px solid #624a42;
+    padding: 0px;
+}
 .textoHome{
   display: inline-block;
-  flex-grow:1.5;
-  margin: 20px;
-  padding-right: 30px;
+  background-color: #bbb1af;
+  width: 50%;
+  padding: 40px;
   color: #624a42;
   font-size: 1.2rem;
   text-align: right;
   align-self: flex-end;
 }
-.banda{
-    background-color: #bbb1af;
+.ultimasCreaciones{
+  text-align: center;
+  background-color: white;
+  padding: 0px 0px 50px 0px;
 }
-.fotos4{
-    border: 1px solid #624a42;
-    padding: 0px;
+h2{
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  text-align: center;
+  padding: 40px 0 20px 0;
+}
+.precio{
+  color: #666;
+}
+.botonComprar{
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #666;
+  margin-top: 10px;
+}
+.destacadosHome{
+  width: 100%;
+  padding: 10px;
+}
+.conjuntoUC{
+  display: flex;
+  justify-content: space-between;
+}
+.envios{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 0px 0px 80px 0px;
+}
+/* formularios*/
+.formulario{
+  padding-top: 100px;
+  margin: 0 auto;
+  line-height: 60px;
+  width: 30%;
+  text-align: center;
+  background-color: white;
+}
+.formulario input{
+  margin: 20px;
+  padding: 20px;
+  width: 80%;
+}
+.formulario button{
+  width: 40%;
+  padding: 20px;
+}
+.atencion{
+  background-color: black;
+  padding: 10px 50px;
+  color: white;
+  margin: 20px;
+  text-align: center;
+  display: inline-block;
+  width: 80%;
 }

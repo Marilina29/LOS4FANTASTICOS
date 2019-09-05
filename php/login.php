@@ -1,38 +1,26 @@
-<html>
-
-  <?php include("menu.php") ?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <?php include("head.php") ?>
+<body class="">
+  <?php include("menu.php") ?>
+<div class="formulario">
+  <div class="">
+    LOGIN
+  </div>
+  <form action="index.php" method="post">
+  <input type="email" name="e-mail" placeholder="email">
+  <br>
+  <input type="password" name="password" placeholder="contraseña">
+  <br>
+  <button type="reset" name="borrar">BORRAR</button>
+  <button type="submit" name="enviar">ENVIAR</button>
+<div class="atencion">
+  REGISTRATE
+</div>
+  </form>
+</div>
 
-<head>
-  <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <title>LOGIN</title>
-</head>
-
-<body class="login">
-
-<header>
-
-
-</header>
-
-
-<form class="" action="practica.html" method="post">
-
-    <p class="formulario">
-      <input type="" name="nombre" value="" placeholder="nombre" required="">
-    </p>
-
-    <p class="formulario">
-      <input type="" name="apellido" value="" placeholder="apellido" required="">
-    </p>
-
-    <button type="reset" name="button">BORRAR</button>
-
-          <button class="boton" type="submit" name="button">ENVIAR</button>
-
-      </form>
-
+<?php include('footer.php') ?>
 </body>
 
 </html>

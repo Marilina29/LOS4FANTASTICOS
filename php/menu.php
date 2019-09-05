@@ -1,16 +1,15 @@
 <header>
-    <a class="logo" href="#"> <img src="../imagenes/glassBeat-logo.png" width="150" height="50"  alt="ACA VA EL LOGO"> </a>
-    <ul class="ulheader">
-      <li class="liheader"> <a class="aheader" href="#"> SHOP </a> </li>
-      <li class="liheader"> <a class="aheader" href="#"> HISTORIA </a> </li>
-      <li class="liheader"> <a class="aheader" href="#"> CONTACTO </a> </li>
-      <li class="liheader"> <a class="aheader" href="#"> ENVIOS </a> </li>
-    </ul>
+  <a class="logo" href="index.php"> <img src="../imagenes/glassBeat-logo.png" width="150" height="50"  alt="ACA VA EL LOGO"> </a>
+  <ul class="ulheader">
+    <li class="liheader"> <a class="aheader" href="shop.php"> SHOP </a> </li>
+    <li class="liheader"> <a class="aheader" href="historia.php"> HISTORIA </a> </li>
+    <li class="liheader"> <a class="aheader" href="mailto:marilina_29@hotmail.com"> CONTACTO </a> </li>
+    <li class="liheader"> <a class="aheader" href="#envios"> ENVIOS </a> </li>
+  </ul>
 
-    <ul class="uliconos">
-      <li class="liconos"><i class="colorb fas fa-search"></i></li>
-      <li class="liconos"><i class="colorb fas fa-user-circle"></i></li>
-      <li class="liconos"><i class="colorb fas fa-shopping-bag"></i></li>
-    </ul>
-
+  <ul class="uliconos">
+    <li> <a href="buscar.php"><i class="colorb fas fa-search"></i></a> </li>
+    <li> <a href="login.php"><i class="colorb fas fa-user-circle"></i></a> </li>
+    <li> <a href="carro.php"><i class="colorb fas fa-shopping-bag"></i></a> </li>
+  </ul>
 </header>
