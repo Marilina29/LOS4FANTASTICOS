@@ -283,16 +283,19 @@ footer ul{
 /* mobile*/
 @media (max-width:460px){
   h1{
-    padding: 100px 0 0 0;
+    padding: 95px 0 0 0;
     font-size: 1.7rem;
     line-height: 2rem;
+    margin-left: 20px;
   }
   .marginados{
     margin:0;
   }
   .mainHome{
-    position: inherit;
-    bottom: auto;
+    display: flex;
+    position: relative;
+    bottom: 0px;
+    z-index: auto;
     top: 40px;
     width: 100%
   }
@@ -301,12 +304,34 @@ footer ul{
   }
   .categorias{
     width: 100%;
+    padding: 0;
+    height: 180px;
 
   }
   .cajita{
     width: 50%;
   }
-
+  .fotos4{
+    border: 0px;
+  }
+  }
+  .banda{
+    position: relative;
+    top:0;
+  }
+  .textoHome{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .conjuntoUC{
+    padding:0px;
+  }
+  .destacadosHome{
+    padding: 20px 0px;
+  }
+/*menu*/
   .ulheader {
     display: none;
   }
@@ -315,16 +340,17 @@ footer ul{
   }
   .uliconos {
     width: 50px;
-    margin-top: 25px;
-    margin-right: 10px;
+    margin-top: 16px;
+    margin-right: 0px;
   }
   .logo img{
     width: 100px;
     height: auto;
-    margin-top: 10px;
+    margin-top: 0px;
     }
   .logo{
     margin-left: 10px;
+    height: 45px;
   }
 
 /*REGISTRO*/
@@ -361,4 +387,6 @@ form button.boton,
   color: white;
   font-size: 20px;
 }
+.envios{
+  padding: 10px;
 }

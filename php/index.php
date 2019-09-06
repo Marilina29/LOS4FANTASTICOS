@@ -1,3 +1,39 @@
+<?php
+$productos = [
+  [
+    "imagen" => "../imagenes/prod_1-flor.jpg",
+    "nombre" => "Flor",
+    "precio" => "250",
+  ],
+  [
+    "imagen" => "../imagenes/prod_2-verdis.jpg",
+    "nombre" => "Verdis",
+    "precio" => "250",
+  ],
+  [
+    "imagen" => "../imagenes/prod_3-blackSil.jpg",
+    "nombre" => "Black Sil",
+    "precio" => "250",
+  ],
+  [
+    "imagen" => "../imagenes/prod_4-primavera.jpg",
+    "nombre" => "Primavera",
+    "precio" => "650",
+  ],
+  [
+    "imagen" => "../imagenes/prod_5-azulera.jpg",
+    "nombre" => "Azulera",
+    "precio" => "250",
+  ],
+  [
+    "imagen" => "../imagenes/prod_6-fusion.jpg",
+    "nombre" => "Fusion",
+    "precio" => "250",
+  ]
+];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <?php include("head.php") ?>
@@ -45,24 +81,12 @@
         <h2>Últimas creaciones</h2>
     <div class="conjuntoUC">
       <!-- este es un destacado -->
-      <div class="cajita">
-        <a href="#"> <img class="destacadosHome" src="../imagenes/prod_5-azulera.jpg" alt="IMAGEN DE PRODUCTO"> <p>Azulera <span class="precio"> $200</span> <br> COMPRAR </p></a>
-      </div>
-      <div class="cajita">
-        <a href="#"> <img class="destacadosHome" src="../imagenes/prod_5-azulera.jpg" alt="IMAGEN DE PRODUCTO"> <p>Azulera <span class="precio"> $200</span> <br> COMPRAR </p></a>
-      </div>
-      <div class="cajita">
-        <a href="#"> <img class="destacadosHome" src="../imagenes/prod_5-azulera.jpg" alt="IMAGEN DE PRODUCTO"> <p>Azulera <span class="precio"> $200</span> <br> COMPRAR </p></a>
-      </div>
-      <div class="cajita">
-        <a href="#"> <img class="destacadosHome" src="../imagenes/prod_5-azulera.jpg" alt="IMAGEN DE PRODUCTO"> <p>Azulera <span class="precio"> $200</span> <br> COMPRAR </p></a>
-      </div>
-      <div class="cajita">
-        <a href="#"> <img class="destacadosHome" src="../imagenes/prod_5-azulera.jpg" alt="IMAGEN DE PRODUCTO"> <p>Azulera <span class="precio"> $200</span> <br> COMPRAR </p></a>
-      </div>
-      <div class="cajita">
-        <a href="#"> <img class="destacadosHome" src="../imagenes/prod_5-azulera.jpg" alt="IMAGEN DE PRODUCTO"> <p>Azulera <span class="precio"> $200</span> <br> COMPRAR </p></a>
-      </div>
+      <?php for ($i=0; $i < 6 ; $i++): ?>
+        <div class="cajita">
+        <a href="#"> <img class="destacadosHome" src="<?= $productos[$i]["imagen"] ?>" alt="IMAGEN DE PRODUCTO"> <p><?= $productos[$i]["nombre"] . " "?>
+        <span class="precio"> <?= $productos[$i]["precio"] ?> </span> <br> </p>
+        <button class="botonComprar" type="button" name="button">COMPRAR</button> </a></div>
+      <?php endfor ?>
     </div>
       </div>
       <div id="envios" class="envios">
