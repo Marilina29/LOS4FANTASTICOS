@@ -310,8 +310,7 @@ footer ul{
   .categorias{
     width: 100%;
     padding: 0;
-    height: 180px;
-
+    background-color: #bbb1af;
   }
   .cajita{
     width: 50%;
@@ -387,7 +386,7 @@ form button.boton,
 }
 .textoHome{
   width: 100%;
-  padding: 10px;
+  padding: 20px 10px;
   text-align: center;
   font-size: 1rem;
 }
