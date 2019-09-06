@@ -287,9 +287,32 @@ footer ul{
 }
 /* mobile*/
 @media (max-width:460px){
+  /*menu*/
+  .ulheader {
+    display: none;
+  }
+  .naviconos{
+    display: none;
+  }
+  .uliconos {
+    width: 50px;
+    margin-top: 16px;
+    margin-right: 10px;
+  }
+  .logo img{
+    width: 100px;
+    height: auto;
+    margin-top: 0px;
+    }
+  .logo{
+    margin-left: 10px;
+    height: 45px;
+  }
+/*contenido*/
+
   h1{
-    padding: 95px 0 0 0;
-    font-size: 1.7rem;
+    padding: 130px 0 35px 0;
+    font-size: 2rem;
     line-height: 2rem;
     margin-left: 20px;
   }
@@ -318,33 +341,29 @@ footer ul{
   .fotos4{
     border: 0px;
   }
-  .mainHome{
-    display: flex;
-    position: relative;
-    bottom: 0px;
-    z-index: auto;
-  }
-
-  .ulheader {
-    display: none;
-  }
-  .naviconos{
-    display: none;
-  }
-  .uliconos {
-    width: 50px;
-    margin-top: 16px;
-    margin-right: 10px;
-  }
-  .logo img{
-    width: 100px;
-    height: auto;
-    margin-top: 0px;
-    }
-  .logo{
-    margin-left: 10px;
-    height: 45px;
-  }
+.botonComprar,
+.nombreDestacado{
+  display: none;
+}
+.textoHome{
+  width: 100%;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+.conjuntoUC{
+  padding:0px;
+}
+.destacadosHome{
+  padding: 0px 2px;
+}
+.envios{
+  padding: 0 10px 40px 10px;
+  height: 100%;
+}
+.ultimasCreaciones{
+  padding: 0px;
+}
 
 /*REGISTRO*/
 
@@ -383,20 +402,5 @@ form button.boton,
 .banda{
   position: relative;
   top:0;
-}
-.textoHome{
-  width: 100%;
-  padding: 20px 10px;
-  text-align: center;
-  font-size: 1rem;
-}
-.conjuntoUC{
-  padding:0px;
-}
-.destacadosHome{
-  padding: 20px 0px;
-}
-.envios{
-  padding: 0 10px 40px 10px;
 }
 }

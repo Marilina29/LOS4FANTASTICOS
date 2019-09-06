@@ -83,7 +83,7 @@ $productos = [
       <!-- este es un destacado -->
       <?php for ($i=0; $i < 6 ; $i++): ?>
         <div class="cajita">
-        <a href="#"> <img class="destacadosHome" src="<?= $productos[$i]["imagen"] ?>" alt="IMAGEN DE PRODUCTO"> <p><?= $productos[$i]["nombre"] . " "?>
+        <a href="#"> <img class="destacadosHome" src="<?= $productos[$i]["imagen"] ?>" alt="IMAGEN DE PRODUCTO"> <p class="nombreDestacado" ><?= $productos[$i]["nombre"] . " "?>
         <span class="precio"> <?= $productos[$i]["precio"] ?> </span> <br> </p>
         <button class="botonComprar" type="button" name="button">COMPRAR</button> </a></div>
       <?php endfor ?>
@@ -100,8 +100,5 @@ $productos = [
         <img class="fondoCont" src="../imagenes/fondo1024.jpg" alt="">
       </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <?php include('javascript.php') ?>
   </body>
 </html>
