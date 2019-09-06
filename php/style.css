@@ -297,8 +297,10 @@ footer ul{
     margin:0;
   }
   .mainHome{
-    position: inherit;
-    bottom: auto;
+    display: flex;
+    position: relative;
+    bottom: 0px;
+    z-index: auto;
     top: 40px;
     width: 100%
   }
@@ -394,5 +396,8 @@ form button.boton,
 }
 .destacadosHome{
   padding: 20px 0px;
+}
+.envios{
+  padding: 0 10px 40px 10px;
 }
 }
