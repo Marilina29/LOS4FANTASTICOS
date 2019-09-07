@@ -29,7 +29,7 @@
 
 
         <input id="contraseña" type="password" name="contraseña" value="" placeholder="contraseña" required="">
-
+        <p class="salto"></p>
 
         <button class="boton" type="reset" name="button">BORRAR</button>
         <button class="boton" type="submit" name="button">ENVIAR</button>

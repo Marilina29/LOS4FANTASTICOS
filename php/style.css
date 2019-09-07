@@ -204,6 +204,7 @@ h2{
 
 
 
+
 .formulario{
   padding-top: 20px;
   margin: 0 auto;
@@ -217,15 +218,18 @@ h2{
   padding: 100px 0 50px;
 }
 
-.formulario input{
-  margin: 10px;
-  padding: 5px;
-  width: 80%;
-  background-color: #bbb1af;
+.formulario input {
+    margin: 8px;
+    padding: 15px;
+    width: 57%;
+    background-color: #bbb1af;
 }
-.formulario button{
-  width: 40%;
-  padding: 10px;
+
+.formulario button {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 28%;
+    padding: 14px;
 }
 .atencion{
   background-color: black;
@@ -236,6 +240,31 @@ h2{
   display: inline-block;
   width: 80%;
 }
+
+.cabecera{
+  background-color: #624a42;
+  color: #bbb1af;
+  width: 57%;
+  margin: 0 auto;
+  
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.salto{
+  display: block;
+
+}
+
+::placeholder{
+  color: white;
+  font-size: 20px;
+}
+
+
+
+
+
 /*HEAD*/
 /* tablet*/
 @media (max-width:800px){
@@ -284,6 +313,40 @@ footer{
 footer ul{
   margin: 0 auto;
 }
+
+/* LOGIN */
+.cabecera{
+  background-color: #624a42;
+  color: #bbb1af;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 25px;
+  margin-bottom: 5%;
+  margin-top: 45px;
+
+}
+.formulario input {
+    margin: 15px;
+    padding: 15px;
+    width: 80%;
+    background-color: #bbb1af;
+}
+.formulario button {
+    font-size: 142%;
+    margin-left: 20px;
+    margin-top: 4%;
+    width: 29%;
+    padding: 9px;
+}
+
+::placeholder {
+      color: white;
+      font-size: 25px;
+    }
+
+
+
+
 }
 /* mobile*/
 @media (max-width:460px){
@@ -380,13 +443,13 @@ div.botones {
 }
 
 
-form button.boton,
-.cabecera{
-  width: 40%;
-  padding: 5px;
-  background-color: #624a42;
-  color: #bbb1af;
-  font-size: 20px;
+form button.boton, .cabecera {
+    width: 40%;
+    margin: 0 auto;
+    padding: 7px;
+    background-color: #624a42;
+    color: #bbb1af;
+    font-size: 20px;
 }
 
 .cabecera {
@@ -403,4 +466,11 @@ form button.boton,
   position: relative;
   top:0;
 }
+}
+/* LOGIN MOBILE */
+
+.formulario{
+  width: 100%;
+}
+
 }
