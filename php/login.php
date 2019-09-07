@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="style.css">
-  </head>
+  <?php include_once("head.php") ?>
 <body class="">
-  <?php include("head.php") ?>
-  <?php include("menu.php") ?>
+  <?php include_once("menu.php") ?>
 
 <div class="formulario formregistro">
   <div class="cabecera">
@@ -18,13 +15,12 @@
   <br>
   <button class="boton" type="reset" name="borrar">BORRAR</button>
   <button class="boton" type="submit" name="enviar">ENTRAR</button>
-<div >
-<a class="atencion" href="register.php"> REGISTRATE </a>
-</div>
+<a href="register.php"> <div class="cabecera">REGISTRATE </div></a>
+
   </form>
 </div>
 
-<?php include('footer.php') ?>
+<?php include_once('footer.php') ?>
 </body>
 
 </html>

@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-      <meta charset="utf-8">
-      <title>REGISTRO</title>
-</head>
+<html lang="en" dir="ltr">
+  <?php include_once("head.php") ?>
   <body>
-    <?php include("head.php") ?>
-    <?php include("menu.php") ?>
+    <?php include_once("menu.php") ?>
 
 
 
@@ -37,7 +31,7 @@
   </form>
 </div>
 
-<?php include('footer.php') ?>
+<?php include_once('footer.php') ?>
 
   </body>
 </html>

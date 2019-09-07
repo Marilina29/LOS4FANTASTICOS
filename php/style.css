@@ -178,6 +178,7 @@ h2{
   padding: 10px 20px;
   border: 2px solid #666;
   margin-top: 10px;
+  font-size: 16px;
 }
 .destacadosHome{
   width: 100%;
@@ -199,6 +200,13 @@ h2{
   background-color: black;
   color: white;
   padding: 0px 10px 80px 10px;
+}
+div.categorias a p{
+  position: relative;
+  bottom: 36px;
+  font-size: 30px;
+  text-align: right;
+  padding-right: 10px;
 }
 /* formularios*/
 
@@ -225,12 +233,6 @@ h2{
     background-color: #bbb1af;
 }
 
-.formulario button {
-    margin-top: 10px;
-    font-size: 20px;
-    width: 28%;
-    padding: 14px;
-}
 .atencion{
   background-color: black;
   padding: 2px 50px;
@@ -245,9 +247,7 @@ h2{
   background-color: #624a42;
   color: #bbb1af;
   width: 57%;
-  margin: 0 auto;
-  
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
   font-size: 20px;
 }
 
@@ -261,15 +261,21 @@ h2{
   font-size: 20px;
 }
 
+form button.boton{
+    width: 28.5%;
+    margin: 10px auto 20px auto;
+    padding: 7px;
+    background-color: #624a42;
+    color: #bbb1af;
+    font-size: 20px;
+    line-height: 32px;
+}
 
 
-
-
-/*HEAD*/
 /* tablet*/
 @media (max-width:800px){
-  .aheader{
-    font-size: 0.9rem;
+.aheader{
+  font-size: 0.9rem;
 }
 .grupoCategorias{
   width: 66%;
@@ -309,6 +315,7 @@ footer{
   text-align: right;
   position: relative;
   bottom: 0px;
+  background-color: #000;
 }
 footer ul{
   margin: 0 auto;
@@ -316,13 +323,10 @@ footer ul{
 
 /* LOGIN */
 .cabecera{
-  background-color: #624a42;
-  color: #bbb1af;
   width: 80%;
-  margin: 0 auto;
   font-size: 25px;
-  margin-bottom: 5%;
-  margin-top: 45px;
+  margin: 20px auto 10px auto;
+
 
 }
 .formulario input {
@@ -331,12 +335,13 @@ footer ul{
     width: 80%;
     background-color: #bbb1af;
 }
-.formulario button {
-    font-size: 142%;
-    margin-left: 20px;
-    margin-top: 4%;
-    width: 29%;
-    padding: 9px;
+form button.boton{
+    width: 40%;
+    margin: 15px auto 20px auto;
+    padding: 7px;
+    background-color: #624a42;
+    color: #bbb1af;
+    font-size: 20px;
 }
 
 ::placeholder {
@@ -374,7 +379,7 @@ footer ul{
 /*contenido*/
 
   h1{
-    padding: 130px 0 35px 0;
+    padding: 154px 0 0 0;
     font-size: 2rem;
     line-height: 2rem;
     margin-left: 20px;
@@ -387,7 +392,7 @@ footer ul{
     position: relative;
     bottom: 0px;
     z-index: auto;
-    top: 40px;
+    top: 10px;
     width: 100%
   }
   .grupoCategorias{
@@ -397,12 +402,14 @@ footer ul{
     width: 100%;
     padding: 0;
     background-color: #bbb1af;
+    overflow: hidden;
   }
   .cajita{
     width: 50%;
   }
   .fotos4{
     border: 0px;
+    border-top: 2px solid white;
   }
 .botonComprar,
 .nombreDestacado{
@@ -427,7 +434,13 @@ footer ul{
 .ultimasCreaciones{
   padding: 0px;
 }
-
+.banda{
+  position: relative;
+  top:-10px;
+}
+.fondoCont{
+  top: 37px;
+}
 /*REGISTRO*/
 
 div.botones {
@@ -445,7 +458,7 @@ div.botones {
 
 form button.boton, .cabecera {
     width: 40%;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     padding: 7px;
     background-color: #624a42;
     color: #bbb1af;
@@ -462,15 +475,8 @@ form button.boton, .cabecera {
   color: white;
   font-size: 20px;
 }
-.banda{
-  position: relative;
-  top:0;
-}
-}
-/* LOGIN MOBILE */
-
 .formulario{
   width: 100%;
 }
-
 }
+/* LOGIN MOBILE */

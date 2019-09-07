@@ -36,11 +36,11 @@ $productos = [
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <?php include("head.php") ?>
+  <?php include_once("head.php") ?>
   <body>
     <div>
     <!-- header / menu -->
-    <?php include("menu.php") ?>
+    <?php include_once("menu.php") ?>
     <!-- aca empieza el contenido -->
   <h1>Arte <br> para usar...</h1>
 
@@ -95,7 +95,7 @@ $productos = [
       </div>
   </div>
   <!-- footer -->
-  <?php include('footer.php') ?>
+  <?php include_once('footer.php') ?>
       <div >
         <img class="fondoCont" src="../imagenes/fondo1024.jpg" alt="">
       </div>
