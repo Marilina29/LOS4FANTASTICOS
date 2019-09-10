@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <html lang="en" dir="ltr">
-  <?php include_once("head.php") ?>
+  <?php include_once("php/head.php") ?>
   <body>
-    <?php include_once("menu.php") ?>
+    <?php include_once("php/menu.php") ?>
 
 
 
@@ -31,7 +31,7 @@
   </form>
 </div>
 
-<?php include_once('footer.php') ?>
+<?php include_once('php/footer.php') ?>
 
   </body>
 </html>

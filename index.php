@@ -1,32 +1,32 @@
 <?php
 $productos = [
   [
-    "imagen" => "../imagenes/prod_1-flor.jpg",
+    "imagen" => "imagenes/prod_1-flor.jpg",
     "nombre" => "Flor",
     "precio" => "250",
   ],
   [
-    "imagen" => "../imagenes/prod_2-verdis.jpg",
+    "imagen" => "imagenes/prod_2-verdis.jpg",
     "nombre" => "Verdis",
     "precio" => "250",
   ],
   [
-    "imagen" => "../imagenes/prod_3-blackSil.jpg",
+    "imagen" => "imagenes/prod_3-blackSil.jpg",
     "nombre" => "Black Sil",
     "precio" => "250",
   ],
   [
-    "imagen" => "../imagenes/prod_4-primavera.jpg",
+    "imagen" => "imagenes/prod_4-primavera.jpg",
     "nombre" => "Primavera",
     "precio" => "650",
   ],
   [
-    "imagen" => "../imagenes/prod_5-azulera.jpg",
+    "imagen" => "imagenes/prod_5-azulera.jpg",
     "nombre" => "Azulera",
     "precio" => "250",
   ],
   [
-    "imagen" => "../imagenes/prod_6-fusion.jpg",
+    "imagen" => "imagenes/prod_6-fusion.jpg",
     "nombre" => "Fusion",
     "precio" => "250",
   ]
@@ -36,20 +36,12 @@ $productos = [
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <title>Glass Beat</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style1.css">
-  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/62ba28ee55.js"></script>
-</head>
+<?php include_once("php/head.php") ?>
 
   <body>
     <div>
     <!-- header / menu -->
-    <?php include_once("menu.php") ?>
+    <?php include_once("php/menu.php") ?>
     <!-- aca empieza el contenido -->
   <h1>Arte <br> para usar...</h1>
 
@@ -59,22 +51,22 @@ $productos = [
         <div class="grupoCategorias">
 
             <div class="categorias">
-                <a href="#"> <img class="fotos4" src="../imagenes/collares.jpg" alt="collares"><img class="fotoCatMobile" src="../imagenes/collares-mobile.jpg" alt="collares">
+                <a href="#"> <img class="fotos4" src="imagenes/collares.jpg" alt="collares"><img class="fotoCatMobile" src="imagenes/collares-mobile.jpg" alt="collares">
                 <p>
               collares</p> </a>
             </div>
             <div class="categorias">
-                <a href="#"> <img class="fotos4" src="../imagenes/pulseras.jpg" alt="pulseras"><img class="fotoCatMobile" src="../imagenes/pulseras-mobile.jpg" alt="pulseras">
+                <a href="#"> <img class="fotos4" src="imagenes/pulseras.jpg" alt="pulseras"><img class="fotoCatMobile" src="imagenes/pulseras-mobile.jpg" alt="pulseras">
                 <p>
               pulseras</p> </a>
             </div>
             <div class="categorias">
-                <a href="#"> <img class="fotos4" src="../imagenes/aros.jpg" alt="aros"><img class="fotoCatMobile" src="../imagenes/aros-mobile.jpg" alt="aros">
+                <a href="#"> <img class="fotos4" src="imagenes/aros.jpg" alt="aros"><img class="fotoCatMobile" src="imagenes/aros-mobile.jpg" alt="aros">
                 <p>
               aros</p> </a>
             </div>
             <div class="categorias">
-                <a href="#"> <img class="fotos4" src="../imagenes/otros.jpg" alt="otros"><img class="fotoCatMobile" src="../imagenes/otros-mobile.jpg" alt="otros">
+                <a href="#"> <img class="fotos4" src="imagenes/otros.jpg" alt="otros"><img class="fotoCatMobile" src="imagenes/otros-mobile.jpg" alt="otros">
                 <p>
               otros</p> </a>
             </div>
@@ -104,9 +96,9 @@ $productos = [
       </div>
   </div>
   <!-- footer -->
-  <?php include_once('footer.php') ?>
+  <?php include_once('php/footer.php') ?>
       <div >
-        <img class="fondoCont" src="../imagenes/fondo1024.jpg" alt="">
+        <img class="fondoCont" src="imagenes/fondo1024.jpg" alt="">
       </div>
     </div>
   </body>

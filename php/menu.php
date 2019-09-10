@@ -1,5 +1,5 @@
 <header>
-  <a class="logo" href="index.php"> <img src="../imagenes/glassBeat-logo.png" width="150" height="50"  alt="ACA VA EL LOGO"> </a>
+  <a class="logo" href="index.php"> <img src="imagenes/glassBeat-logo.png" width="150" height="50"  alt="ACA VA EL LOGO"> </a>
   <ul class="ulheader">
     <li class="liheader"> <a class="aheader" href="shop.php"> SHOP </a> </li>
     <li class="liheader"> <a class="aheader" href="historia.php"> HISTORIA </a> </li>
