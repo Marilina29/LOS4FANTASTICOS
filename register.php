@@ -22,7 +22,7 @@
         <input type="email" name="email" value="" placeholder="email" required="">
 
 
-        <input id="contraseña" type="password" name="contraseña" value="" placeholder="contraseña" required="">
+        <input id="pass" type="password" name="pass" value="" placeholder="contraseña" required="">
         <p class="salto"></p>
 
         <button class="boton" type="reset" name="button">BORRAR</button>

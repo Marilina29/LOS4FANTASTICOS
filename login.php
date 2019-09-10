@@ -9,9 +9,9 @@
     LOGIN
   </div>
   <form action="index.php" method="post">
-  <input class="email" type="email" name="e-mail" placeholder="email">
+  <input class="email" type="email" name="email" placeholder="email">
   <br>
-  <input class="email" type="password" name="password" placeholder="contraseña">
+  <input class="email" type="password" name="pass" placeholder="contraseña">
   <br>
   <button class="boton" type="reset" name="borrar">BORRAR</button>
   <button class="boton" type="submit" name="enviar">ENTRAR</button>
