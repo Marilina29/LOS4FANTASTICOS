@@ -5,6 +5,12 @@
             "nombre": "",
             "email": "",
             "password": ""
+        },
+        {
+            "id": 2,
+            "nombre": "efef",
+            "email": "graciela.rosujovsky@avon.com",
+            "password": "$2y$10$Qof27COorRN7rmMrwY2CjO99rktWBPXtYPpmW52g0ebrb8jVRpHhG"
         }
     ]
 }

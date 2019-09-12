@@ -75,15 +75,15 @@ if($_POST){
         <div class="cabecera">
         REGISTRO
         </div>
-          <input type="" name="name" value="" placeholder=<?php if($nombreOk==""){echo "Nombre";}else{echo $nombreOk;}?> required="">
+          <input type="" name="name" value=<?php if($nombreOk == ""){echo "";} else {echo $nombreOk;}?>  placeholder="Nombre" required="">
           <?php
           if(isset($errores["name"])){
            ?> <p class="errores"> <?php echo $errorNombre;}?> </p>
-          <input type="" name="apellido" value="" placeholder=<?php if($apellidoOk==""){echo "Apellido";} else{echo $apellidoOk;}?> required="">
+          <input type="" name="apellido" value=<?php if($apellidoOk==""){echo "";} else{echo $apellidoOk;}?> placeholder="Apellido" required="">
           <?php
           if(isset($errores["apellido"])){
            ?> <p class="errores"> <?php echo $errorApellido;}?> </p>
-          <input type="email" name="email" value="" placeholder=<?php if($emailOk==""){echo "Email";} else{echo $emailOk;}?> required="">
+          <input type="email" name="email" value=<?php if($emailOk==""){echo "";} else{echo $emailOk;}?> placeholder="Email" required="">
           <?php
           if(isset($errores["email"])){
            ?> <p class="errores"> <?php echo $errorEmail;}?> </p>
