@@ -267,6 +267,10 @@ form button.boton{
     line-height: 32px;
 }
 
+p.errores{
+  line-height: 1;
+}
+
 
 /* tablet*/
 @media (max-width:800px){

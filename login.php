@@ -1,3 +1,8 @@
+<?php 
+include_once("php/funciones.php");
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <?php include_once("php/head.php") ?>
