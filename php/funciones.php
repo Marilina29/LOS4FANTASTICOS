@@ -32,7 +32,7 @@ function validarRegistro($datos){
   } else if(!filter_var($datosFinales["email"], FILTER_VALIDATE_EMAIL)){
     $errores["email"] = "Por favor ingrese un email con formato válido";
   } else if(buscarUsuarioPorMail($datosFinales["email"])) {
-    $errores["email"] = "El email ya existe. Por favor elija otro.";
+    $errores["email"] = "El email ya está registrado. Por favor elija otro.";
   }
   //Password
   if(strlen($datosFinales["pass"]) < 4){
