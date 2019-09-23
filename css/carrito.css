@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins'
+}
+
+.container{
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+.h{
+  font-family: 'Poppins';
+  font-size: 23px;
+  font-weight: 150;
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 30px;
+}
+h2 {
+  color: grey;
+}
+.cuerpo{
+
+  margin-left: 10%;
+  margin-right: 10%;
+  display: block;
+  margin-top: 80px;
+}
+.subtitulo{
+  display: flex;
+  margin-left: 20px;
+
+
+}
+.cart-content{
+  width: 60%;
+  border: 0.3px solid ;
+  border-bottom: 0px;
+
+}
+.compras{
+  margin-left: 10px;
+  font-size: 20px;
+  color: black;
+}
+.icono {
+  padding-top: 6px;
+}
+.imagen{
+  width: 120px;
+  height: 120px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.cart-product {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:5px;
+
+}
+.cart-column {
+  width: 100px;
+    height: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.numero{
+  width: 25px;
+}
+.number-field{
+  margin-bottom: 10px;
+}
+
+h4{
+  margin-bottom: 30px;
+}
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td{
+  border: 0.3px solid;
+}
+.eliminar{margin-left: 12px;}
