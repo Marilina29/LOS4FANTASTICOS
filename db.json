@@ -5,6 +5,12 @@
             "nombre": "",
             "email": "",
             "password": ""
+        },
+        {
+            "id": 2,
+            "nombre": "Marilina",
+            "email": "marilina_29@hotmail.com",
+            "password": "$2y$10$0X3eIszb\/BGf\/Yv6bY8NOui0VTwUjfZlAQJwOz\/.8E5.CkhmBlaMO"
         }
     ]
 }

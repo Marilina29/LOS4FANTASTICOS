@@ -83,7 +83,7 @@ footer{
   color: white;
   font-size: 1rem;
   text-align: right;
-  padding-right: 40px;
+  padding-right: 33px;
   position: fixed;
   bottom: 15px;
   right: 0px;
@@ -362,16 +362,12 @@ form button.boton{
   .ulheader {
     display: none;
   }
-  .naviconos{
-    display: none;
-  }
   .uliconos {
-    width: 50px;
     margin-top: 16px;
     margin-right: 10px;
   }
   .logo img{
-    width: 100px;
+    width: 120px;
     height: auto;
     margin-top: 0px;
     }
