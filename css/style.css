@@ -75,6 +75,32 @@ a{
 .navbar{
   display: none;
 }
+    ul li ul.dropdown{
+        min-width: 100px;
+        display: none;
+        position: absolute;
+        right:127px;
+        top:13px;
+        padding: 7px;
+        text-align: right;
+        z-index: 999;
+        left: 0;
+        font-size: 16px;
+    }
+    ul li:hover ul.dropdown{
+        display: block;
+    }
+    ul.dropdown li{
+        display: inline-block;
+    }
+    .logs{
+      color:  #bbb1af;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 7px;
+      }
+
 /* footer */
 footer{
   display: inline-block;
@@ -282,8 +308,6 @@ p.errores{
   font-size: 16px;
   color: #624a42;
 }
-
-
 /* tablet*/
 @media (max-width:800px){
 .aheader{
@@ -323,6 +347,11 @@ p.errores{
   width: 130px;
   margin-top: 26px;
 }
+
+ul li ul.dropdown{
+    right:155px;
+    top: 9px;
+}
 footer{
   display:block;
   width: 100%;
@@ -361,8 +390,6 @@ form button.boton{
       color: white;
       font-size: 25px;
     }
-
-
 
 
 }

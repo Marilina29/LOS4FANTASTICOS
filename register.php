@@ -10,8 +10,6 @@ $errorEmail = "";
 $errorPass = "";
 
 if($_POST){
-
-  //tenemos que detectar errores y mostrarlos al usuario.
   $errores = validarRegistro($_POST);
 
   if(!isset($errores["name"])){
@@ -24,21 +22,11 @@ if($_POST){
     $emailOk = trim($_POST["email"]);
   }
 
-  //Si no hay errores;
   if(!$errores){
-    // Crear un usuario
     $usuario = armarUsuario();
-
-    //Guardarlo en alguna parte
     guardarUsuario($usuario);
-
-    //Subir la imagen de perfil
-
-    //Auto Loguear usuario (Opcional);
-
-    //Redirigirlo a página Exito;
     header("Location:index.php");exit;
-  } else {
+    } else {
     if(!isset($errores["name"])){
       $nombreOk = trim($_POST["name"]);
     } else {

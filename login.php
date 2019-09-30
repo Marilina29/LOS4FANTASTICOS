@@ -34,14 +34,14 @@ if($_POST){
     INGRESA CON TUS DATOS
   </div>
   <form action="login.php" method="post">
-  <input class="email" type="email" name="email" placeholder="email">
-  <?php
-  if(isset($errores["email"])){
-   ?> <p class="errores"> <?php echo $errorEmail;}?> </p>
-  <input class="email" type="password" name="pass" placeholder="contraseña">
-  <?php
-  if(isset($errores["pass"])){
-   ?> <p class="errores" <?php echo $errorPass;}?> </p>
+    <input type="email" name="email" <?php if($emailOk != ""){echo "value = $emailOk";}?> placeholder="Email" required="">
+    <?php
+    if(isset($errores["email"])){
+     ?> <p class="errores"> <?php echo $errorEmail;}?> </p>
+     <input id="pass" type="password" name="pass" value="" placeholder="Contraseña" required="">
+     <?php
+     if(isset($errores["pass"])){
+      ?> <p class="errores"> <?php echo $errorPass;}?> </p>
   <button class="boton" type="reset" name="borrar">BORRAR</button>
   <button class="boton" type="submit" name="enviar">ENTRAR</button>
 <a href="register.php"> <div class="cabecera">¿AÚN NO ESTÁS REGISTRADO?</div></a>

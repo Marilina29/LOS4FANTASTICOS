@@ -8,7 +8,12 @@
   </ul>
 
   <ul class="uliconos">
-    <li class="naviconos"> <a href="login.php"><i class="colorb fas fa-user-circle"></i></a> </li>
+    <li class="naviconos"> <a href="login.php"><i class="colorb fas fa-user-circle"></i></a>
+      <ul class="dropdown">
+                  <li><a class="logs" href="login.php">Ingresar</a></li>
+                  <li><a class="logs" href="register.php">Registrarse</a></li>
+              </ul>
+    </li>
     <li class="naviconos"> <a href="buscar.php"><i class="colorb fas fa-search"></i></a> </li>
     <li class="naviconos"> <a href="carrito.php"><i class="colorb fas fa-shopping-bag"></i></a> </li>
     <li class="navbar"> <a href="#menu"><i class="fas fa-bars"></i></i></a> </li>
