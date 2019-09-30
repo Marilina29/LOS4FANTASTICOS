@@ -72,8 +72,8 @@ if($_POST){
     <?php include_once("php/menu.php") ?>
     <div class="formulario formregistro">
       <form class="" action="register.php" method="post">
-        <div class="cabecera">
-        REGISTRO
+        <div class="tituloForm">
+          REGISTRATE AQUÍ
         </div>
           <input type="" name="name" <?php if($nombreOk != ""){echo "value = $nombreOk";}?> placeholder="Nombre" required="">
           <?php
@@ -94,6 +94,7 @@ if($_POST){
           <p class="salto"></p>
           <button class="boton" type="reset" name="button">BORRAR</button>
           <button class="boton" type="submit" name="button">ENVIAR</button>
+          <a href="login.php"> <div class="cabecera" name="button">¿YA ESTÁS REGISTRADO? INGRESA <strong>AQUÍ</strong></div></a>
       </form>
     </div>
 <?php include_once('php/footer.php') ?>

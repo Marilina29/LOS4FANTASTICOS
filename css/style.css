@@ -227,6 +227,7 @@ h2{
     padding: 15px;
     width: 57%;
     background-color: #bbb1af;
+    font-size: 18px;
 }
 
 .atencion{
@@ -240,11 +241,20 @@ h2{
 }
 
 .cabecera{
-  background-color: #624a42;
+  background-color: #825c74;
   color: #bbb1af;
-  width: 57%;
+  width: 57.5%;
   margin: 0 auto 20px auto;
   font-size: 20px;
+}
+.tituloForm{
+  width: 80%;
+  display: inline-block;
+  padding: 0%;
+  font-size: 25px;
+  color: #825c74;
+  background-color: fff;
+  font-weight: bold;
 }
 
 .salto{
@@ -269,6 +279,8 @@ form button.boton{
 
 p.errores{
   line-height: 1;
+  font-size: 16px;
+  color: #624a42;
 }
 
 
@@ -316,7 +328,6 @@ footer{
   width: 100%;
   font-size: 1rem;
   text-align: right;
-  position: relative;
   bottom: 0px;
   background-color: #000;
 }
@@ -327,8 +338,7 @@ footer ul{
 /* LOGIN */
 .cabecera{
   width: 80%;
-  font-size: 25px;
-  margin: 20px auto 10px auto;
+  margin: 10px auto 10px auto;
 
 
 }
@@ -424,7 +434,6 @@ form button.boton{
   width: 100%;
   padding: 20px 10px;
   text-align: center;
-  font-size: 0.8rem;
 }
 .conjuntoUC{
   padding:0px;
@@ -434,7 +443,6 @@ form button.boton{
 }
 .envios{
   padding: 0 10px 40px 10px;
-  height: 100%;
 }
 .ultimasCreaciones{
   padding: 0px;
@@ -473,16 +481,14 @@ div.botones {
 form button.boton, .cabecera {
     width: 40%;
     margin: 0 auto 20px auto;
-    padding: 7px;
-    background-color: #624a42;
     color: #bbb1af;
-    font-size: 20px;
+    line-height: 25px;
 }
 
 .cabecera {
   width: 80%;
   display: inline-block;
-  padding: 0%;
+  padding: 7px;
 }
 
 ::placeholder {

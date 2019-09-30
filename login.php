@@ -30,8 +30,8 @@ if($_POST){
   <?php include_once("php/menu.php") ?>
 
 <div class="formulario formregistro">
-  <div class="cabecera">
-    LOGIN
+  <div class="tituloForm">
+    INGRESA CON TUS DATOS
   </div>
   <form action="login.php" method="post">
   <input class="email" type="email" name="email" placeholder="email">
@@ -44,7 +44,7 @@ if($_POST){
    ?> <p class="errores" <?php echo $errorPass;}?> </p>
   <button class="boton" type="reset" name="borrar">BORRAR</button>
   <button class="boton" type="submit" name="enviar">ENTRAR</button>
-<a href="register.php"> <div class="cabecera">REGISTRATE </div></a>
+<a href="register.php"> <div class="cabecera">¿AÚN NO ESTÁS REGISTRADO?</div></a>
 
   </form>
 </div>

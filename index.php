@@ -39,7 +39,6 @@ $productos = [
 <?php include_once("php/head.php") ?>
 
   <body>
-    <div>
     <!-- header / menu -->
     <?php include_once("php/menu.php") ?>
     <!-- aca empieza el contenido -->
@@ -95,11 +94,10 @@ $productos = [
         <p class="marginados">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
   </div>
+  <div >
+    <img class="fondoCont" src="imagenes/fondo1024.jpg" alt="">
+  </div>
   <!-- footer -->
   <?php include_once('php/footer.php') ?>
-      <div >
-        <img class="fondoCont" src="imagenes/fondo1024.jpg" alt="">
-      </div>
-    </div>
   </body>
 </html>

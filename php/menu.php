@@ -4,7 +4,7 @@
     <li class="liheader"> <a class="aheader" href="shop.php"> SHOP </a> </li>
     <li class="liheader"> <a class="aheader" href="historia.php"> HISTORIA </a> </li>
     <li class="liheader"> <a class="aheader" href="mailto:marilina_29@hotmail.com"> CONTACTO </a> </li>
-    <li class="liheader"> <a class="aheader" href="#envios"> ENVIOS </a> </li>
+    <li class="liheader"> <a class="aheader" href="index.php#envios"> ENVIOS </a> </li>
   </ul>
 
   <ul class="uliconos">
