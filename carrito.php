@@ -34,112 +34,67 @@ $carrito = [
 
 ?>
 
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr">
 
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/carrito.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/62ba28ee55.js"></script>
-    <title></title>
-  </head>
-  <body>
-    <div class="container">
-      <section class="titulo">
-        <h1 class = "h">Carrito de compras</h1>
-        <h2 class = "h">1 Producto</h2>
-      </section>
-    </div>
-    <section class="cuerpo">
-      <section class="cart-content">
-        <header class="subtitulo">
-          <span><i class="fas fa-shopping-cart icono"></i></span>
-          <h2 class="compras">Mis Compras</h2>
-        </header>
-        <?php for ($i=0; $i < count($carrito) ; $i++): ?>
-        <table class="cart-table">
-          <tbody>
-            <tr class="borde">
-              <td class="class-image" rowspan="1">
-                <div class="cart-image">
-                  <img class="imagen" src=<?= $carrito[$i]["imagen"]?> alt="collares">
+   <head>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="css/carrito.css">
+     <title></title>
+   </head>
+   <body>
+     <header>
+      <?php include_once("php/menu.php") ?>
+       <div class="contenedor">
+         <div class="contenedorarticulos">
+           <div>
+             <h1>Mi Carrito</h1>
+           </div>
+           <?php for ($i=0; $i < count($carrito) ; $i++): ?>
+           <div class="desimpo">
+                <div class="imagen">
+                   <img src=<?= $carrito[$i]["imagen"]?> width="100px" alt="collares">
                 </div>
-              </td>
-              <td>
-                <div class="cart-product">
-                  <h4><?= $carrito[$i]["nombre"]?></h4>
-                  <h3>Descripcion</h3>
-                </div>
-              </td>
-              <td>
-                <div class="cart-column">
-                  <h4>Cantidad</h4>
-                  <div class="cart-amount">
-                    <div class="number-field">
-                      <button class="numero" type="number-dec" name="button">-</button>
-                      <input class="numero" type="number" name="amount" value="">
-                      <button class="numero" type="number-dec" name="button">+</button>
-                    </div>
-                    <a class="eliminar" href="#">Eliminar</a>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="cart-column">
-                  <h4>Precio</h4>
-                  <div class="precio">
-                    <h5><?= $carrito[$i]["precio"]?></h5>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="cart-column">
-                  <h4>Subtotal</h4>
-                  <div class="cart-price">
-                    <h5>20</h5>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      <?php endfor?>
-      </section>
-      <section class="cart-sumary">
-        <div class="resumen">
-          <div class="titulo">
-            <h6>Resumen de la orden</p>
-          </div>
-          <div class="totalunidades">
-            <p class="p1">Total</p>
-            <p>1200</p>
-          </div>
-          <div class="retiro">
-            <p class="p1">Tipo de envio</p>
-            <p>retiro en sucursal</p>
-          </div>
-          <div class="botones">
-            <button class="confirmar" type="button" name="button">Confirmar productos</button>
-            <button class="agregar" type="button" name="button">Agregar mas productos</button>
-
-          </div>
-
-        </div>
-
-      </section>
-
-    </section>
+                <div class="general">
+                     <span class="desc"><?= $carrito[$i]["nombre"]?></span>
+                     <span>Importe</span>
+                     <br>
+                     <div class="importe">
+                         <div class="sumar">
+                           <button class="bot" type="sumar" name="button">+</button>
+                           <input class="imp" type="text" name="" value="">
+                           <button class="bot" type="restar" name="button">-</button>
+                         </div>
+                         <div class="ftotal">
+                           <p class="ptotal">Subtotal</p>
+                           <p class="ptotal">1234,34</p>
+                         </div>
+                      </div>
+                      <a class="eliminar" href="#">Eliminar</a>
+                 </div>
+           </div>
+          <?php endfor?>
+         </div>
+         <div class="resumen">
+           <h1>Resumen</h1>
+           <div class="resumensub">
+             <h2>Subtotal</h2>
+             <h2>1234,55</h2>
+           </div>
+           <div class="resumentot">
+             <h3>Total</h3>
+             <h3>1234,55</h3>
+           </div>
+           <div class="seguir">
+             <a class="aseguir" href="#">Seguir comprando</a>
+             <button class="bfinalizar" type="button" name="button">FINALIZAR</button>
+           </div>
 
 
+         </div>
+       </div>
+     </header>
 
-
-
-    </main>
-
-
-
-  </body>
-</html>
+   </body>
+ </html>
