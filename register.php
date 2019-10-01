@@ -1,5 +1,10 @@
 <?php
 include_once("php/funciones.php");
+
+if(usuarioLogueado()){
+  header("Location:index.php"); exit;
+}
+
 $errores = [];
 $nombreOk = "";
 $apellidoOk = "";
@@ -27,6 +32,7 @@ if($_POST){
     $usuario = armarUsuario($ext);
     guardarUsuario($usuario);
     move_uploaded_file($_FILES["avatar"]["tmp_name"], "img/" . $usuario["id"] . "." . $ext);
+    loguearUsuario();
 
     header("Location:index.php");exit;
 
