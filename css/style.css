@@ -100,6 +100,9 @@ a{
       justify-content: flex-end;
       padding: 7px;
       }
+      input#rememberMe.rememberMe{
+      width: 20px;
+      }
 
 /* footer */
 footer{
@@ -287,6 +290,11 @@ h2{
   display: block;
 
 }
+.avatar{
+  line-height: 10px;
+  font-size: 18px;
+  color: #bbb1af;
+}
 
 ::placeholder{
   color: white;
@@ -390,8 +398,6 @@ form button.boton{
       color: white;
       font-size: 25px;
     }
-
-
 }
 /* mobile*/
 @media (max-width:460px){

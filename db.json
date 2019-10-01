@@ -10,19 +10,7 @@
             "id": 2,
             "nombre": "Marilina",
             "email": "marilina_29@hotmail.com",
-            "password": "$2y$10$0X3eIszb\/BGf\/Yv6bY8NOui0VTwUjfZlAQJwOz\/.8E5.CkhmBlaMO"
-        },
-        {
-            "id": 3,
-            "nombre": "Marilina",
-            "email": "maru@lumia.com.ar",
-            "password": "$2y$10$4BbU9UdgqbUolROPTR2KbOjqiHztkdot9SsIqvYruC4a7ppl8Mo0q"
-        },
-        {
-            "id": 4,
-            "nombre": "Marilina",
-            "email": "m@as.com",
-            "password": "$2y$10$K5f8UWjuZH\/WxsAMUku7a.zyTknbtDD5vVbndiUvWFP2dU\/HVz5U."
+            "password": "$2y$10$UntL84FqiFnNMfGAArFwhe9eTaxJ6pfZ\/gzP7USgFLuaVBEMsYesG"
         }
     ]
 }

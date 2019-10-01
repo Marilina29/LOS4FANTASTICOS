@@ -44,6 +44,10 @@ if($_POST){
       ?> <p class="errores"> <?php echo $errorPass;}?> </p>
   <button class="boton" type="reset" name="borrar">BORRAR</button>
   <button class="boton" type="submit" name="enviar">ENTRAR</button>
+<div>
+  <input type="checkbox" name="rememberMe" class="rememberMe" id="rememberMe">
+<label for="rememberMe" class="email">Recordarme</label>
+</div>
 <a href="register.php"> <div class="cabecera">¿AÚN NO ESTÁS REGISTRADO?</div></a>
 
   </form>

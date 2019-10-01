@@ -25,7 +25,11 @@ if($_POST){
   if(!$errores){
     $usuario = armarUsuario();
     guardarUsuario($usuario);
+    $ext = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
+    move_uploaded_file($_FILES["avatar"]["tmp_name"], "img/" . $usuario["id"] . "." . $ext);
+
     header("Location:index.php");exit;
+    
     } else {
     if(!isset($errores["name"])){
       $nombreOk = trim($_POST["name"]);
@@ -59,7 +63,7 @@ if($_POST){
   <body>
     <?php include_once("php/menu.php") ?>
     <div class="formulario formregistro">
-      <form class="" action="register.php" method="post">
+      <form class="" action="register.php" method="post" enctype="multipart/form-data">
         <div class="tituloForm">
           REGISTRATE AQUÍ
         </div>
@@ -79,6 +83,10 @@ if($_POST){
           <?php
           if(isset($errores["pass"])){
            ?> <p class="errores"> <?php echo $errorPass;}?> </p>
+           <div class="avatar">
+         <label id="avatar" for="avatar">Imagen de Perfil (optativo)</label>
+          </div>
+          <input type="file" name="avatar" value="Selecciona una imagen">
           <p class="salto"></p>
           <button class="boton" type="reset" name="button">BORRAR</button>
           <button class="boton" type="submit" name="button">ENVIAR</button>
