@@ -8,10 +8,10 @@
   </ul>
 
   <ul class="uliconos">
-    <li class="naviconos"> <a href="login.php"><i class="colorb fas fa-user-circle"></i></a>
+    <li class="naviconos"> <a href=<?php if(usuarioLogueado()){ echo "perfil.php";} else { echo "login.php"; } ?>> <?php if(usuarioLogueado()){?> <img class="imgPerfil" src="img/<?php echo buscarUsuarioPorMail($_SESSION['email'])['img']; ?>"> <?php } else { ?> <i class="colorb fas fa-user-circle"> <?php } ?> </i></a>
       <ul class="dropdown">
-                  <li><a class="logs" href="login.php">Ingresar</a></li>
-                  <li><a class="logs" href="register.php">Registrarse</a></li>
+                  <li><a class="logs" href=<?php if(usuarioLogueado()){ echo "perfil.php";} else { echo "login.php"; } ?>><?php if(usuarioLogueado()){ echo "Perfil";} else { echo "Ingresar"; } ?></a></li>
+                  <li><a class="logs" href="<?php if(usuarioLogueado()){ echo "logout.php";} else { echo "register.php"; } ?>"><?php if(usuarioLogueado()){ echo "Salir";} else { echo "Registrarse"; } ?></a></li>
               </ul>
     </li>
     <li class="naviconos"> <a href="buscar.php"><i class="colorb fas fa-search"></i></a> </li>

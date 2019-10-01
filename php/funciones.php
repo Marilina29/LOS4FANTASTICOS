@@ -46,12 +46,13 @@ function nextId(){
   $nextId = $lastUser["id"] + 1;
   return $nextId;
 }
-function armarUsuario(){
+function armarUsuario($ext){
   return [
     "id" => nextId(),
     "nombre" => trim($_POST["name"]),
     "email" =>  trim($_POST["email"]),
     "password" => password_hash($_POST["pass"], PASSWORD_DEFAULT),
+    "img" => nextId() . ".$ext"
   ];
 }
 function guardarUsuario($user){

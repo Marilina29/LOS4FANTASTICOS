@@ -103,6 +103,11 @@ a{
       input#rememberMe.rememberMe{
       width: 20px;
       }
+.imgPerfil {
+  width: 6px;
+  border-radius: 3px;
+  
+}
 
 /* footer */
 footer{

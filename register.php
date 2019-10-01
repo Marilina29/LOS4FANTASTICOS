@@ -23,13 +23,13 @@ if($_POST){
   }
 
   if(!$errores){
-    $usuario = armarUsuario();
-    guardarUsuario($usuario);
     $ext = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
+    $usuario = armarUsuario($ext);
+    guardarUsuario($usuario);
     move_uploaded_file($_FILES["avatar"]["tmp_name"], "img/" . $usuario["id"] . "." . $ext);
 
     header("Location:index.php");exit;
-    
+
     } else {
     if(!isset($errores["name"])){
       $nombreOk = trim($_POST["name"]);

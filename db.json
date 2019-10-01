@@ -11,6 +11,13 @@
             "nombre": "Marilina",
             "email": "marilina_29@hotmail.com",
             "password": "$2y$10$UntL84FqiFnNMfGAArFwhe9eTaxJ6pfZ\/gzP7USgFLuaVBEMsYesG"
+        },
+        {
+            "id": 3,
+            "nombre": "flor",
+            "email": "flor@gmail.com",
+            "password": "$2y$10$KriDVfNOxd2YCC9IFLOCGuxediNlwslJ7Jf729poc2dR.GT6PvEr6",
+            "img": "3.jpg"
         }
     ]
 }

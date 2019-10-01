@@ -1,4 +1,6 @@
 <?php
+include_once("php/funciones.php");
+
 $productos = [
   [
     "imagen" => "imagenes/prod_1-flor.jpg",
