@@ -56,7 +56,7 @@ a{
 }
 
 .uliconos{
-  width: 100px;
+  width: 107px;
   display: block;
   float: right;
   margin-top: 30px;
@@ -79,7 +79,7 @@ a{
         min-width: 100px;
         display: none;
         position: absolute;
-        right:127px;
+        right:137px;
         top:13px;
         padding: 7px;
         text-align: right;
@@ -104,9 +104,15 @@ a{
       width: 20px;
       }
 .imgPerfil {
-  width: 6px;
+  width: 25px;
+  height: 25px;
   border-radius: 3px;
-  
+  margin-left: 9px;
+  margin-top: -3px;
+
+}
+li.naviconos{
+  display: inline-block;
 }
 
 /* footer */
@@ -357,12 +363,12 @@ p.errores{
   color: white;
 }
 .uliconos {
-  width: 130px;
+  width: 140px;
   margin-top: 26px;
 }
 
 ul li ul.dropdown{
-    right:155px;
+    right:167px;
     top: 9px;
 }
 footer{
@@ -413,6 +419,8 @@ form button.boton{
   .uliconos {
     margin-top: 16px;
     margin-right: 10px;
+    padding-left: 4px;
+    width: 153px;
   }
   .logo img{
     width: 120px;
@@ -424,7 +432,7 @@ form button.boton{
     height: 45px;
   }
   ul li ul.dropdown {
-    right: 125px;
+    right: 152px;
     top: 0px;
     background-color: black;
   }

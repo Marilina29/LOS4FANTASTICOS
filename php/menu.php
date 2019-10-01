@@ -1,3 +1,8 @@
+<?php
+if(usuarioLogueado()){
+  $imagenPerfil = "img/". buscarUsuarioPorMail($_SESSION['email'])['img'];
+}
+ ?>
 <header>
   <a class="logo" href="index.php"> <img src="imagenes/glassBeat-logo.png" width="150" height="50"  alt="ACA VA EL LOGO"> </a>
   <ul class="ulheader">
@@ -8,7 +13,8 @@
   </ul>
 
   <ul class="uliconos">
-    <li class="naviconos"> <a href=<?php if(usuarioLogueado()){ echo "perfil.php";} else { echo "login.php"; } ?>> <?php if(usuarioLogueado()){?> <img class="imgPerfil" src="img/<?php echo buscarUsuarioPorMail($_SESSION['email'])['img']; ?>"> <?php } else { ?> <i class="colorb fas fa-user-circle"> <?php } ?> </i></a>
+    <li class="naviconos"> <a href=<?php if(usuarioLogueado()){ echo "perfil.php";} else { echo "login.php"; } ?>> <?php if(usuarioLogueado()){?> <img class="imgPerfil" src="<?= $imagenPerfil ?> "> <?php } else { ?>
+      <i class="colorb fas fa-user-circle"> <?php } ?> </i></a>
       <ul class="dropdown">
                   <li><a class="logs" href=<?php if(usuarioLogueado()){ echo "perfil.php";} else { echo "login.php"; } ?>><?php if(usuarioLogueado()){ echo "Perfil";} else { echo "Ingresar"; } ?></a></li>
                   <li><a class="logs" href="<?php if(usuarioLogueado()){ echo "logout.php";} else { echo "register.php"; } ?>"><?php if(usuarioLogueado()){ echo "Salir";} else { echo "Registrarse"; } ?></a></li>

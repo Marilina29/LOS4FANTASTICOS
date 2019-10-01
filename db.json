@@ -10,7 +10,8 @@
             "id": 2,
             "nombre": "Marilina",
             "email": "marilina_29@hotmail.com",
-            "password": "$2y$10$UntL84FqiFnNMfGAArFwhe9eTaxJ6pfZ\/gzP7USgFLuaVBEMsYesG"
+            "password": "$2y$10$UntL84FqiFnNMfGAArFwhe9eTaxJ6pfZ\/gzP7USgFLuaVBEMsYesG",
+            "img": "2.jpg"
         },
         {
             "id": 3,
