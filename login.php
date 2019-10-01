@@ -3,6 +3,7 @@ include_once("php/funciones.php");
 $errores = [];
 $errorEmail = "";
 $errorPass = "";
+$emailOk="";
 
 if($_POST){
 
@@ -14,7 +15,9 @@ if($_POST){
   } else {
     if(isset($errores["email"])){
       $errorEmail = $errores["email"];
-          }
+    } else {
+      $emailOk=$_POST["email"];
+    }
     if(isset($errores["pass"])){
       $errorPass = $errores["pass"];
     }

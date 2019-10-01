@@ -40,6 +40,9 @@ $carrito = [
 
    <head>
      <meta charset="utf-8">
+     <?php
+     include_once('php/head.php');
+     ?>
      <link rel="stylesheet" href="css/carrito.css">
      <title></title>
    </head>
