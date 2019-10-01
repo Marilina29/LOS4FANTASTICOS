@@ -19,6 +19,13 @@
             "email": "flor@gmail.com",
             "password": "$2y$10$KriDVfNOxd2YCC9IFLOCGuxediNlwslJ7Jf729poc2dR.GT6PvEr6",
             "img": "3.jpg"
+        },
+        {
+            "id": 4,
+            "nombre": "se",
+            "email": "se@li.com",
+            "password": "$2y$10$XXlpvCE7aZhgqLiV7w.Zi..HD6jOjgDouoPb\/LrAQjR0nf9IIjdnS",
+            "img": "4.jpg"
         }
     ]
 }
