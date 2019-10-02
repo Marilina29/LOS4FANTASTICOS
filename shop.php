@@ -1,5 +1,7 @@
 
-
+<?php
+include_once('php/funciones.php');
+?>
 <!DOCTYPE html>
 <html>
 <html lang="en" dir="ltr">

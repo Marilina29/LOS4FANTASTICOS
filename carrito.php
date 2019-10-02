@@ -1,4 +1,5 @@
 <?php
+include_once('php/funciones.php');
 $carrito = [
   [
     "imagen" => "imagenes/prod_1-flor.jpg",
