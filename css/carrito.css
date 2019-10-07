@@ -10,7 +10,7 @@ body{
   width: 90%;
   background-color: #bbb1af;
   margin: 0 auto;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -21,15 +21,9 @@ body{
   background-color: white;
   width: 41%;
   margin-left: 120px;
+  margin-top: 170px;
 }
 
-h1{
-  display: flex;
-  justify-content: center;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 22px;
-  border-bottom: 1px solid grey;
-}
 .imagen{
   margin-left: 5px;
   width: 100px;
@@ -106,7 +100,9 @@ font-size: 15px;}
   width: 32%;
   background-color: white;
   margin-right: 134px;
-  height: 283px;
+  margin-top: 170px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .resumensub{
   display: flex;
@@ -171,5 +167,24 @@ h3{
   font-size: 15px;
   align-items: center;
 
+
+}
+
+
+h1{
+
+  display: flex;
+  justify-content: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 22px;
+  border-bottom: 1px solid grey;
+  padding: 0;
+  margin-left: 0;
+
+}
+
+h4{
+  display:inline-block;
+  width: 100%;
 
 }

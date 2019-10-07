@@ -40,12 +40,17 @@ $carrito = [
 
 
    <head>
-     <meta charset="utf-8">
+
+
+     <?php include "php/head.php" ?>
      <link rel="stylesheet" href="css/carrito.css">
      <title></title>
+
    </head>
    <body>
-     <header>
+     <?php include "php/menu.php" ?>
+
+     <div>
        <div class="contenedor">
          <div class="contenedorarticulos">
            <div>
@@ -77,7 +82,7 @@ $carrito = [
           <?php endfor?>
          </div>
          <div class="resumen">
-           <h1>Resumen</h1>
+           <h4>Resumen</h4>
            <div class="resumensub">
              <h2>Subtotal</h2>
              <h2>1234,55</h2>
@@ -94,7 +99,7 @@ $carrito = [
 
          </div>
        </div>
-     </header>
+     </div>
 
    </body>
  </html>
