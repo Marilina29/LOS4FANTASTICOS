@@ -91,6 +91,9 @@ $carrito = [
              <h3>Total</h3>
              <h3>1234,55</h3>
            </div>
+           <div class="linea">
+             
+           </div>
            <div class="seguir">
              <a class="aseguir" href="#">Seguir comprando</a>
              <button class="bfinalizar" type="button" name="button">FINALIZAR</button>

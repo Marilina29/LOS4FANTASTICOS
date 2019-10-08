@@ -102,33 +102,35 @@ font-size: 15px;}
   margin-right: 134px;
   margin-top: 170px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  height: fit-content;
+
+
 }
 .resumensub{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-right: 40px;
+
+
 }
 .resumentot{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-right: 40px;
+
+
+
 }
 h2{
-  display: block;
-  width: 30%;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 18px;
   margin-left: 30px;
-
-
-
 }
+
 h3{
-  display: block;
-  width: 30%;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 20px;
   margin-left: 30px;
@@ -139,17 +141,17 @@ h3{
   font-weight: 500;
   text-transform: uppercase;
   color:#4f90cf;
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  margin-top: 20px;
+  border-bottom: 1px solid black;
+  padding-bottom: 31px;
+
 
 }
 .aseguir{
   display: flex;
+  flex-direction: row;
   justify-content: center;
   margin-bottom: 20px;
-
 
 }
 .bfinalizar{
@@ -184,7 +186,15 @@ h1{
 }
 
 h4{
-  display:inline-block;
-  width: 100%;
+  display:inline-flex;
+  justify-content: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 22px;
+  border-bottom: 1px solid grey;
+  padding:10px;
+}
 
+.linea{
+  border-bottom: solid 1px;
+  margin-top: 25px;
 }
