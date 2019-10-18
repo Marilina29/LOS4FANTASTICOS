@@ -1,0 +1,25 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "name": "Marilina",
+            "apellido": "Rozenberg",
+            "email": "marilina_29@hotmail.com",
+            "pass": "$2y$10$p9i3CEvrbT\/Jn4WHmwz2du49HTCrzFA9qTingBsahotnpq..\/1NoW"
+        },
+        {
+            "id": 2,
+            "name": "mm",
+            "apellido": "mm",
+            "email": "mm@mm.mm",
+            "pass": "$2y$10$Y0ZliYed7oaLvsbp2KXBIuIzTmcBTUTy6ZkA9e.wW7x3GY\/mEouw6"
+        },
+        {
+            "id": 3,
+            "name": "Marilina",
+            "apellido": "Rozenberg",
+            "email": "marilina_2@hotmail.com",
+            "pass": "$2y$10$1LVpmLlg0pnIm5UnU5kDB.j1ZXShOc8bQxzjumP4A57G91TL\/6dCu"
+        }
+    ]
+}

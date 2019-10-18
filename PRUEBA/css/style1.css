@@ -1,0 +1,496 @@
+/* estilos generales */
+* {
+  box-sizing:border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+body{
+  background-color: #bbb1af;
+}
+/* menu */
+header{
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  background-color: #000;
+  overflow: hidden;
+  z-index: 100;
+}
+a{
+  color: #252525;
+}
+.logo {
+  display: block;
+  margin-left: 40px;
+  float: left;
+  height: 60px;
+  margin-top: 10px;
+}
+
+.liheader {float: left;
+  margin-left: 10px;
+}
+
+.ulheader{
+  padding-top: 27px;
+  margin-left: 0px;
+  width: 50%;
+  padding-left: 10px;
+  float: left;
+}
+
+.aheader{
+  color: white;
+  font-size: 1.1rem;
+}
+
+.colorb{
+  color: white;
+  display: block;
+  float: left;
+  margin-left: 15px;
+
+}
+
+.uliconos{
+  width: 100px;
+  display: block;
+  float: right;
+  margin-top: 30px;
+  margin-right: 40px;
+}
+.uliconos li{
+  color: white;
+  font-size: 1.2rem;
+}
+.fondoCont{
+  z-index: -1;
+  position: fixed;
+  top: 10px;
+  width: 100%;
+}
+.navbar{
+  display: none;
+}
+/* footer */
+footer{
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 30%;
+  color: white;
+  font-size: 1rem;
+  text-align: right;
+  padding-right: 40px;
+  position: fixed;
+  bottom: 15px;
+  right: 0px;
+  z-index: 100;
+}
+footer a, footer li{
+  color: white;
+  float: left;
+  padding: 5px 7px;
+}
+footer ul{
+  display: inline-block;
+      margin-block-end: 0;
+}
+/* home */
+.marginados{
+  margin: 0 40px;
+}
+h1{
+  display: block;
+  font-family: 'Pacifico', cursive;
+  padding: 200px 0px 0px 0px;
+  margin-bottom: 20px;
+  font-size: 3.8rem;
+  line-height: 3rem;
+  margin-left: 40px;
+}
+.mainHome{
+  display: flex;
+  position: relative;
+  bottom: -170px;
+  z-index: 10;
+}
+.banda{
+    background-color: #bbb1af;
+    text-align: right;
+
+}
+.grupoCategorias{
+  width: 50%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fotos4{
+  display: block;
+  width: 100%;
+  color: #624a42;
+  padding-right: 10px;
+}
+.categorias{
+  text-align: center;
+  font-size: 1.5rem;
+  color: #624a42;
+  width: 47%;
+  padding: 10px;
+}
+.categorias a{
+  color: #252525;
+}
+.fotos4{
+    border: 1px solid #624a42;
+    padding: 0px;
+}
+.fotoCatMobile{
+  display:none;
+}
+.textoHome{
+  display: inline-block;
+  background-color: #bbb1af;
+  width: 50%;
+  padding: 40px;
+  color: #624a42;
+  font-size: 1.2rem;
+  text-align: right;
+  align-self: flex-end;
+}
+.ultimasCreaciones{
+  text-align: center;
+  background-color: white;
+  padding: 0px 0px 50px 0px;
+  flex-wrap: wrap;
+}
+h2{
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  text-align: center;
+  padding: 40px 0 20px 0;
+}
+.precio{
+  color: #666;
+}
+.botonComprar{
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #666;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.destacadosHome{
+  width: 100%;
+  padding: 10px;
+}
+.conjuntoUC{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 40px;
+}
+.cajita{
+  width: 16.5%;
+  flex-wrap: wrap;
+}
+.envios{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 0px 10px 80px 10px;
+}
+/* formularios*/
+
+
+
+
+.formulario{
+  padding-top: 20px;
+  margin: 0 auto;
+  line-height: 60px;
+  width: 50%;
+  text-align: center;
+  background-color: white;
+}
+
+.formregistro{
+  padding: 100px 0 50px;
+}
+
+.formulario input {
+    margin: 8px;
+    padding: 15px;
+    width: 57%;
+    background-color: #bbb1af;
+}
+
+.atencion{
+  background-color: black;
+  padding: 2px 50px;
+  color: white;
+  margin: 20px;
+  text-align: center;
+  display: inline-block;
+  width: 80%;
+}
+
+.cabecera{
+  background-color: #624a42;
+  color: #bbb1af;
+  width: 57%;
+  margin: 0 auto 20px auto;
+  font-size: 20px;
+}
+
+.salto{
+  display: block;
+
+}
+
+::placeholder{
+  color: white;
+  font-size: 20px;
+}
+
+form button.boton{
+    width: 28.5%;
+    margin: 10px auto 20px auto;
+    padding: 7px;
+    background-color: #624a42;
+    color: #bbb1af;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+
+/* tablet*/
+@media (max-width:800px){
+.aheader{
+  font-size: 0.9rem;
+}
+.grupoCategorias{
+  width: 66%;
+}
+.textoHome{
+  width: 34%;
+  padding-left: 0px;
+  padding-bottom: 80px;
+}
+.banda{
+  position: relative;
+  top:-225px;
+}
+.cajita{
+  width: 32%;
+  padding-bottom: 20px;
+}
+.botonComprar{
+  font-size: 1.1rem;
+}
+/*FOOTER*/
+.ulheader {
+  display: none;
+}
+.navbar{
+  display: inline;
+  padding-left: 13px;
+}
+.fa-bars{
+  color: white;
+}
+.uliconos {
+  width: 130px;
+  margin-top: 26px;
+}
+footer{
+  display:block;
+  width: 100%;
+  font-size: 1rem;
+  text-align: right;
+  position: relative;
+  bottom: 0px;
+  background-color: #000;
+}
+footer ul{
+  margin: 0 auto;
+}
+
+/* LOGIN */
+.cabecera{
+  width: 80%;
+  font-size: 25px;
+  margin: 20px auto 10px auto;
+
+
+}
+.formulario input {
+    margin: 15px;
+    padding: 15px;
+    width: 80%;
+    background-color: #bbb1af;
+}
+form button.boton{
+    width: 40%;
+    margin: 15px auto 20px auto;
+    padding: 7px;
+    background-color: #624a42;
+    color: #bbb1af;
+    font-size: 20px;
+}
+
+::placeholder {
+      color: white;
+      font-size: 25px;
+    }
+
+
+
+
+}
+/* mobile*/
+@media (max-width:460px){
+  /*menu*/
+  .ulheader {
+    display: none;
+  }
+  .naviconos{
+    display: none;
+  }
+  .uliconos {
+    width: 50px;
+    margin-top: 16px;
+    margin-right: 10px;
+  }
+  .logo img{
+    width: 100px;
+    height: auto;
+    margin-top: 0px;
+    }
+  .logo{
+    margin-left: 10px;
+    height: 45px;
+  }
+/*contenido*/
+
+  h1{
+    padding: 154px 0 0 0;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-left: 20px;
+  }
+  .marginados{
+    margin:0;
+  }
+  .mainHome{
+    display: flex;
+    position: relative;
+    bottom: 0px;
+    z-index: auto;
+    top: 10px;
+    width: 100%
+  }
+  .grupoCategorias{
+    width: 100%;
+  }
+  .categorias{
+    width: 100%;
+    padding: 0;
+    background-color: #bbb1af;
+    overflow: hidden;
+  }
+  .cajita{
+    width: 50%;
+  }
+  .fotos4{
+    border: 0px;
+    border-top: 2px solid white;
+    display: none;
+  }
+  .fotoCatMobile{
+    padding: 0px;
+    width: 100%;
+    display:flex;
+  }
+.botonComprar,
+.nombreDestacado{
+  display: none;
+}
+.textoHome{
+  width: 100%;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.conjuntoUC{
+  padding:0px;
+}
+.destacadosHome{
+  padding: 0px 2px;
+}
+.envios{
+  padding: 0 10px 40px 10px;
+  height: 100%;
+}
+.ultimasCreaciones{
+  padding: 0px;
+}
+.banda{
+  position: relative;
+  top:-10px;
+}
+.fondoCont{
+  top: 37px;
+}
+div.categorias a p{
+  position: relative;
+  bottom: 50px;
+  font-size: 30px;
+  text-align: right;
+  padding-right: 10px;
+  z-index: 2;
+  height: 0vh;
+}
+/*REGISTRO*/
+
+div.botones {
+  padding-top: 20px;
+  margin: 0 auto;
+  line-height: 60px;
+  width: 30%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+
+form button.boton, .cabecera {
+    width: 40%;
+    margin: 0 auto 20px auto;
+    padding: 7px;
+    background-color: #624a42;
+    color: #bbb1af;
+    font-size: 20px;
+}
+
+.cabecera {
+  width: 80%;
+  display: inline-block;
+  padding: 0%;
+}
+
+::placeholder {
+  color: white;
+  font-size: 20px;
+}
+.formulario{
+  width: 100%;
+}
+}
+/* LOGIN MOBILE */

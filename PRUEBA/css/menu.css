@@ -1,0 +1,48 @@
+@media(max-width: 800px) {
+  .ulheader {
+    display: none;
+  }
+  .navbar{
+    display: inline;
+  }
+  .fa-bars{
+    color: white;
+  }
+  .uliconos {
+    width: 130px;
+  }
+  footer{
+    display:block;
+    width: 100%;
+    font-size: 1rem;
+    text-align: right;
+    position: relative;
+    bottom: 0px;
+  }
+  footer ul{
+    margin: 0 auto;
+  }
+}
+
+@media(max-width: 460px){
+  .ulheader {
+    display: none;
+  }
+  .naviconos{
+    display: none;
+  }
+  .uliconos {
+    width: 50px;
+    margin-top: 25px;
+    margin-right: 10px;
+  }
+  .logo img{
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    }
+  .logo{
+    margin-left: 10px;
+  }
+
+}
