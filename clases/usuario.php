@@ -8,14 +8,28 @@ class Usuario
   private $apellido;
   private $email;
   private $password;
+  private $img;
 
-  function __construct(Array $array)
+  function __construct(Array $array, string $ext)
   {
-    global $json;
-    $this->id = $json->nextId();
-    $this->name = $_POST["name"];
-    $this->email = $_POST["email"];
-    $this->password = password_hash($_POST["pass"], PASSWORD_DEFAULT);
+    global $db;
+
+    if(isset($array["id"])){
+      $this->id = $array["id"];
+      $this->password = $array["pass"];
+    } else {
+      if ($db instanceof DbJson ){
+        $this->id = $db->nextId(); //nextID();
+      } else {
+        $this->id = null;
+      }
+      $this->password = password_hash($array["pass"], PASSWORD_DEFAULT);
+    }
+    $this->name = $array["name"];
+    $this->email = $array["email"];
+    $this->apellido = $array["apellido"];
+    $this->img = $this->id . "." . $ext;
+
 
   }
 
@@ -23,7 +37,7 @@ class Usuario
     return $this->id;
   }
   public function getName(){
-    return $this->nombre;
+    return $this->name;
   }
   public function getApellido(){
     return $this->apellido;
@@ -33,6 +47,9 @@ class Usuario
   }
   public function getPassword(){
     return $this->password;
+  }
+  public function getImg(){
+    return $this->img;
   }
 
 

@@ -4,28 +4,44 @@
             "id": 1,
             "nombre": "",
             "email": "",
-            "password": ""
+            "pass": ""
         },
         {
             "id": 2,
             "nombre": "Marilina",
             "email": "marilina_29@hotmail.com",
-            "password": "$2y$10$UntL84FqiFnNMfGAArFwhe9eTaxJ6pfZ\/gzP7USgFLuaVBEMsYesG",
+            "pass": "$2y$10$UntL84FqiFnNMfGAArFwhe9eTaxJ6pfZ\/gzP7USgFLuaVBEMsYesG",
             "img": "2.jpg"
         },
         {
             "id": 3,
             "nombre": "flor",
             "email": "flor@gmail.com",
-            "password": "$2y$10$KriDVfNOxd2YCC9IFLOCGuxediNlwslJ7Jf729poc2dR.GT6PvEr6",
+            "pass": "$2y$10$KriDVfNOxd2YCC9IFLOCGuxediNlwslJ7Jf729poc2dR.GT6PvEr6",
             "img": "3.jpg"
         },
         {
             "id": 4,
             "nombre": "se",
             "email": "se@li.com",
-            "password": "$2y$10$XXlpvCE7aZhgqLiV7w.Zi..HD6jOjgDouoPb\/LrAQjR0nf9IIjdnS",
+            "pass": "$2y$10$XXlpvCE7aZhgqLiV7w.Zi..HD6jOjgDouoPb\/LrAQjR0nf9IIjdnS",
             "img": "4.jpg"
+        },
+        {
+            "id": 5,
+            "name": "flor",
+            "apellido": null,
+            "email": "flor4@gmail.com",
+            "pass": "$2y$10$gJL4aq6isO.DvRYBaXnkX.LAk6ulJ8ZchnZMVFBvkr3HUJp7ZbVVS",
+            "img": "5.jpeg"
+        },
+        {
+            "id": 6,
+            "name": "flor",
+            "apellido": "hola",
+            "email": "hola1234@gmail.com",
+            "pass": "$2y$10$d9p2ji6BLg4GRZKXNZVRjezpxU1tW\/q3L5XjiwR2gzp3nA7tZLWXu",
+            "img": "6.jpg"
         }
     ]
 }

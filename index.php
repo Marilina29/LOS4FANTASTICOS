@@ -1,5 +1,5 @@
 <?php
-include_once("php/funciones.php");
+include "init.php";
 
 $productos = [
   [

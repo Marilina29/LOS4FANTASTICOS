@@ -1,7 +1,7 @@
 <?php
-include_once("php/funciones.php");
+include "init.php";
 
-if(usuarioLogueado()){
+if($auth->usuarioLogueado()){
   header("Location:index.php"); exit;
 }
 
@@ -12,10 +12,10 @@ $emailOk="";
 
 if($_POST){
 
-  $errores = validarLogin($_POST);
+  $errores = Validator::validarLogin($_POST);
 
   if(!$errores){
-    loguearUsuario();
+    $auth->loguearUsuario($_POST['email']);
     header("Location:index.php"); exit;
   } else {
     if(isset($errores["email"])){

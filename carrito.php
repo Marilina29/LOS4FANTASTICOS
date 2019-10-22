@@ -1,5 +1,5 @@
 <?php
-include_once('php/funciones.php');
+include "init.php";
 $carrito = [
   [
     "imagen" => "imagenes/prod_1-flor.jpg",
@@ -92,7 +92,7 @@ $carrito = [
              <h3>1234,55</h3>
            </div>
            <div class="linea">
-             
+
            </div>
            <div class="seguir">
              <a class="aseguir" href="#">Seguir comprando</a>

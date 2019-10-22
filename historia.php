@@ -1,6 +1,6 @@
 
 <?php
-include_once('php/funciones.php');
+include "init.php";
 ?>
 <!DOCTYPE html>
 <html>

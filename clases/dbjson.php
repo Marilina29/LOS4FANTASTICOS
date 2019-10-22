@@ -2,7 +2,7 @@
 /**
  *
  */
-class DbJson
+class DbJson extends Db
 {
   private $json;
 
@@ -14,32 +14,37 @@ class DbJson
     $this->json = file_get_contents($file);
     }
   }
-  public function guardarUsuario(Usuario $user, string $file){
+  public function guardarUsuario(Usuario $user, string $ext, string $file  = null){
     $array = json_decode($this->json, true);
     $usuario = [
       "id" => $user->getId(),
       "name" => $user->getName(),
-      "apellido"=> $apellido->getApellido(),
+      "apellido"=> $user->getApellido(),
       "email" => $user->getEmail(),
-      "password" =>$user->getPassword(),
+      "pass" =>$user->getPassword(),
+      "img" => $user->getImg()
     ];
 
     $array["usuarios"][] = $usuario;
 
     $json = json_encode($array, JSON_PRETTY_PRINT);
     file_put_contents($file, $json);
+
   }
 
-  function buscarUsuarioPorMail(string $email){
+  public function buscarUsuarioPorMail(string $email){
     $array = json_decode($this->json, true);
-      foreach ($array["usuarios"] as $usuario) {
+
+    foreach ($array["usuarios"] as $usuario) {
       if($usuario["email"] == $email){
-      return $usuario;
+        $ext =  pathinfo($usuario["img"], PATHINFO_EXTENSION);
+        $user = new Usuario($usuario, $ext);
+        return $user; //Debería retornar un Objeto de tipo Usuario.
       }
     }
     return null;
   }
-  function nextId(){
+  public function nextId(){
   $array = json_decode($this->json, true);
   $lastUser = array_pop($array["usuarios"]);
   $nextId = $lastUser["id"] + 1;

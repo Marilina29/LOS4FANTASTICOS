@@ -1,7 +1,7 @@
 <?php
-include_once("php/funciones.php");
+include "init.php";
 
-if(usuarioLogueado()){
+if($auth->usuarioLogueado()){
   header("Location:index.php"); exit;
 }
 
@@ -15,7 +15,7 @@ $errorEmail = "";
 $errorPass = "";
 
 if($_POST){
-  $errores = validarRegistro($_POST);
+  $errores = Validator::validarRegistro($_POST);
 
   if(!isset($errores["name"])){
     $nombreOk = trim($_POST["name"]);
@@ -29,10 +29,10 @@ if($_POST){
 
   if(!$errores){
     $ext = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
-    $usuario = armarUsuario($ext);
-    guardarUsuario($usuario);
-    move_uploaded_file($_FILES["avatar"]["tmp_name"], "img/" . $usuario["id"] . "." . $ext);
-    loguearUsuario();
+    $usuario = new Usuario($_POST, $ext);
+    $db->guardarUsuario($usuario, $ext, $file);
+    move_uploaded_file($_FILES["avatar"]["tmp_name"], "img/" . $usuario->getId() . "." . $ext);
+    $auth->loguearUsuario($_POST['email']);
 
     header("Location:index.php");exit;
 
@@ -90,9 +90,10 @@ if($_POST){
           if(isset($errores["pass"])){
            ?> <p class="errores"> <?php echo $errorPass;}?> </p>
            <div class="avatar">
-         <label id="avatar" for="avatar">Imagen de Perfil (optativo)</label>
+         <label id="avatar" for="avatar"></label>
           </div>
           <input type="file" name="avatar" value="Selecciona una imagen">
+          <?php if(isset($errores["avatar"])) { ?><p class="errores"> <?php echo $errores["avatar"];} ?></p>
           <p class="salto"></p>
           <button class="boton" type="reset" name="button">BORRAR</button>
           <button class="boton" type="submit" name="button">ENVIAR</button>
