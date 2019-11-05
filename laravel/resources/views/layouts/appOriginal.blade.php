@@ -13,47 +13,14 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/62ba28ee55.js"></script>
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-<!-- nuestro Menú va acá, hay que copiar las funcionalidades de abajo
-
-
-  <header>
-    <a class="logo" href="index.php"> <img src="imagenes/glassBeat-logo.png" width="150" height="50"  alt="glassBeat"> </a>
-    <ul class="ulheader">
-      <li class="liheader"> <a class="aheader" href="shop.php"> SHOP </a> </li>
-      <li class="liheader"> <a class="aheader" href="historia.php"> HISTORIA </a> </li>
-      <li class="liheader"> <a class="aheader" href="mailto:marilina_29@hotmail.com"> CONTACTO </a> </li>
-      <li class="liheader"> <a class="aheader" href="index.php#envios"> ENVIOS </a> </li>
-    </ul>
-
-    <ul class="uliconos">
-      <li class="naviconos"> <a href=<?php if($auth->usuarioLogueado()){ echo "perfil.php";} else { echo "login.php"; } ?>> <?php if($auth->usuarioLogueado()){?> <img class="imgPerfil" src="<?= $imagenPerfil ?> "> <?php } else { ?>
-        <i class="colorb fas fa-user-circle"> <?php } ?> </i></a>
-        <ul class="dropdown">
-                    <li><a class="logs" href=<?php if($auth->usuarioLogueado()){ echo "perfil.php";} else { echo "login.php"; } ?>><?php if($auth->usuarioLogueado()){ echo "Perfil";} else { echo "Ingresar"; } ?></a></li>
-                    <li><a class="logs" href="<?php if($auth->usuarioLogueado()){ echo "logout.php";} else { echo "register.php"; } ?>"><?php if($auth->usuarioLogueado()){ echo "Salir";} else { echo "Registrarse"; } ?></a></li>
-                </ul>
-      </li>
-      <li class="naviconos"> <a href="buscar.php"><i class="colorb fas fa-search"></i></a> </li>
-      <li class="naviconos"> <a href="carrito.php"><i class="colorb fas fa-shopping-bag"></i></a> </li>
-      <li class="navbar"> <a href="#menu"><i class="fas fa-bars"></i></i></a> </li>
-    </ul>
-  </header>
-
-
-
--->
-
-
-
-<div id="app">
+    <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
