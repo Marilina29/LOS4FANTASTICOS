@@ -100,9 +100,16 @@ a{
       justify-content: flex-end;
       padding: 7px;
       }
-      input#rememberMe.rememberMe{
+      input#remember.remember{
       width: 20px;
       }
+    .rememberMe{
+      margin: 0px auto;
+    }
+input#remember
+{
+  width: 20px;  
+}
 .imgPerfil {
   width: 25px;
   height: 25px;

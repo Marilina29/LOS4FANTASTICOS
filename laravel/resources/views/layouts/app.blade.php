@@ -22,7 +22,7 @@
 </head>
 <body>
   <header>
-    <a class="logo" href="index.php"> <img src="imagenes/glassBeat-logo.png" width="150" height="50"  alt="ACA VA EL LOGO"> </a>
+    <a class="logo" href="{{ route('home') }}"> <img src="imagenes/glassBeat-logo.png" width="150" height="50"  alt="GlassBeat"> </a>
     <ul class="ulheader">
       <li class="liheader"> <a class="aheader" href="shop.php"> SHOP </a> </li>
       <li class="liheader"> <a class="aheader" href="historia.php"> HISTORIA </a> </li>
@@ -35,8 +35,32 @@
       <li class="naviconos"> <a href="#">
         <i class="colorb fas fa-user-circle"></i></a>
         <ul class="dropdown">
-                    <li><a class="logs" href="#">LOGIN</a></li>
-                    <li><a class="logs" href="#">REGISTRATE</a></li>
+
+        @guest
+                    <li><a class="logs" href="{{ route('login') }}">LOGIN</a></li>
+        @if (Route::has('register'))
+                    <li><a class="logs" href="{{ route('register') }}">REGISTRATE</a></li>
+        @endif
+        @else
+
+              <li class="nav-item dropdown">
+                  <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                      {{ Auth::user()->name }} <span class="caret"></span>
+                  </a>
+
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="{{ route('logout') }}"
+                         onclick="event.preventDefault();
+                                       document.getElementById('logout-form').submit();">
+                          {{ __('Logout') }}
+                      </a>
+
+                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                          @csrf
+                      </form>
+                  </div>
+              </li>
+          @endguest
                 </ul>
       </li>
       <li class="naviconos"> <a href="buscar.php"><i class="colorb fas fa-search"></i></a> </li>
@@ -49,5 +73,12 @@
             @yield('content')
         </main>
     </div>
+    <footer>
+      <ul>
+        <li> <a href="https://www.instagram.com/glassbeatart/"><i class="fab fa-instagram"></i></a> </li>
+        <li> <a href="https://www.facebook.com/GlassBeatArt/"><i class="fab fa-facebook"></i> </a> </li>
+        <li> <a href="mailto:marilina_29@hotmail.com"> <i class="fas fa-paper-plane"></i></a> </li>
+      </ul>
+    </footer>
 </body>
 </html>
