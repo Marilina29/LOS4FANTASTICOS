@@ -33,6 +33,8 @@ $productos = [
 ];
 
 ?>
+
+
 @extends('layouts.app')
 
 @section('content')
@@ -75,14 +77,14 @@ $productos = [
     <div class="ultimasCreaciones">
       <h2>Últimas creaciones</h2>
   <div class="conjuntoUC">
-    <!-- este es un destacado -->
-    <?php for ($i=0; $i < 6 ; $i++): ?>
+    @for ($i=0; $i < 6; $i++)
       <div class="cajita">
-      <a href="#"> <img class="destacadosHome" src="<?= $productos[$i]["imagen"] ?>" alt="IMAGEN DE PRODUCTO"> <p class="nombreDestacado" ><?= $productos[$i]["nombre"] . " "?>
-      <span class="precio"> <?= $productos[$i]["precio"] ?> </span> <br> </p>
+      <a href="#"> <img class="destacadosHome" src="imagenes/{{$products[$i]->img}}" alt="IMAGEN DE PRODUCTO"> <p class="nombreDestacado" > {{$products[$i]->name}}
+      <span class="precio"> {{$products[$i]->price}} </span> <br> </p>
       <button class="botonComprar" type="button" name="button">COMPRAR</button> </a></div>
-    <?php endfor ?>
-  </div>
+    @endfor
+
+   </div>
     </div>
     <div id="envios" class="envios">
       <h2>Envíos</h2>
