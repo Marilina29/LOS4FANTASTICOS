@@ -9,11 +9,12 @@ $factory->define(Product::class, function (Faker $faker) {
   $imagenes = ['prod_1-flor.jpg', 'prod_2-verdis.jpg', 'prod_3-blackSil.jpg', 'prod_4-primavera.jpg', 'prod_5-azulera.jpg', 'prod_6-fusion.jpg' ];
     return [
         'code' => $faker->unique()->word,
-        'description' => $faker->paragraph(4),
+        'description' => $faker->word,
         'color' => $faker->colorName,
-        'img' => $faker->randonElement($imagenes),
-        'price' => $faker->numberBetween(200, 300),
-        'style' => $faker->numberBetween(0, 5)      
+        'price' => $faker->numberBetween($min = 200, $max = 300),
+        'style_id' => numberBetween($min = 0, $max = 3),
+        'category_id' => numberBetween($min = 0, $max = 3),
+        'img' => $faker->randomElement($imagenes)
 
     ];
 });
