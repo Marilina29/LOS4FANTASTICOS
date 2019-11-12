@@ -32,6 +32,19 @@
               </div>
           @enderror
 
+        <input id="dni" type="integer" class="form-control @error('dni') is-invalid @enderror" name="dni" value="{{ old('dni') }}" required autocomplete="dni" placeholder="DNI">
+        @error('dni')
+          <div class="errores" role="alert">
+                <strong>{{ $message }}</strong>
+          </div>
+        @enderror
+
+        <input id="telephone" type="integer" class="form-control @error('telephone') is-invalid @enderror" name="telephone" value="{{ old('telephone') }}" required autocomplete="telephone" placeholder="Teléfono">
+        @error('telephone')
+          <div class="errores" role="alert">
+                <strong>{{ $message }}</strong>
+          </div>
+        @enderror
 
 
         <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="Contraseña">
@@ -42,13 +55,7 @@
           @enderror
 
 
-          <input id="password-confirm" type="password" class="form-control @error('password') is-invalid @enderror" name="password-confirmation" required autocomplete="new-password" placeholder="Confirmar Contraseña">
-            @error('password')
-                <div class="errores" role="alert">
-                    <strong>{{ $message }}</strong>
-                </div>
-            @enderror
-
+          <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Confirmar Contraseña">
 
 
 

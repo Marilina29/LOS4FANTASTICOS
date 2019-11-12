@@ -20,11 +20,9 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->integer('dni');
             $table->integer('telephone');
-            $table->bigInteger('role')->unsigned();
-            $table->foreign('role')->references('id')->on('roles')->onDelete('cascade');
-            $table->bigInteger('adress_id')->unsigned();
-            $table->foreign('adress_id')->references('id')->on('adress')->onDelete('cascade');
+            $table->string('password');
             $table->timestamps();
+            $table->rememberToken();
 
         });
     }

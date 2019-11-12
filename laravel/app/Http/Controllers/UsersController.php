@@ -34,9 +34,34 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+      $rules = [
+            "titulo" => "string|min:1"
 
+          ];
+
+          $messages = [
+            "string" => "El campo :attribute debe ser texto.",
+            "min" => "El campo :attribute debe tener al menos :min carateres."
+          ];
+
+          $this->validate($req, $rules, $messages); //Si validamos tenemos que mostrar los errores al usuario.
+
+          $ruta = $req->file('image')->store('public/img'); //Guarda la imagen en el filesistem
+          $nombreImg = basename($ruta);
+
+          $user = new Movie();
+
+          $user->name = $req['name'];
+          $useruser->surname = $req['surname'];
+          $user->email = $req['email'];
+          $user->dni = $req['dni'];
+          $user->telephone = $req['telephone'];
+          $user->password = $req['password'];
+
+          $user->save();
+
+          return redirect('home');
+        }
     /**
      * Display the specified resource.
      *
