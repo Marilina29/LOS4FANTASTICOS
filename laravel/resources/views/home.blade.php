@@ -1,39 +1,3 @@
-<?php
-$productos = [
-  [
-    "imagen" => "imagenes/prod_1-flor.jpg",
-    "nombre" => "Flor",
-    "precio" => "250",
-  ],
-  [
-    "imagen" => "imagenes/prod_2-verdis.jpg",
-    "nombre" => "Verdis",
-    "precio" => "250",
-  ],
-  [
-    "imagen" => "imagenes/prod_3-blackSil.jpg",
-    "nombre" => "Black Sil",
-    "precio" => "250",
-  ],
-  [
-    "imagen" => "imagenes/prod_4-primavera.jpg",
-    "nombre" => "Primavera",
-    "precio" => "650",
-  ],
-  [
-    "imagen" => "imagenes/prod_5-azulera.jpg",
-    "nombre" => "Azulera",
-    "precio" => "250",
-  ],
-  [
-    "imagen" => "imagenes/prod_6-fusion.jpg",
-    "nombre" => "Fusion",
-    "precio" => "250",
-  ]
-];
-
-?>
-
 
 @extends('layouts.app')
 
