@@ -25,9 +25,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $products = Product::all()->random(6);
-        // dd($products);
-        
+        $products = Product::all()->random(5);
+        //dd($products);
+
         return view('home', compact('products'));
     }
 }

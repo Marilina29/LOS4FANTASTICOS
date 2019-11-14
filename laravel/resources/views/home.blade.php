@@ -1,36 +1,36 @@
 <?php
-$productos = [
-  [
-    "imagen" => "imagenes/prod_1-flor.jpg",
-    "nombre" => "Flor",
-    "precio" => "250",
-  ],
-  [
-    "imagen" => "imagenes/prod_2-verdis.jpg",
-    "nombre" => "Verdis",
-    "precio" => "250",
-  ],
-  [
-    "imagen" => "imagenes/prod_3-blackSil.jpg",
-    "nombre" => "Black Sil",
-    "precio" => "250",
-  ],
-  [
-    "imagen" => "imagenes/prod_4-primavera.jpg",
-    "nombre" => "Primavera",
-    "precio" => "650",
-  ],
-  [
-    "imagen" => "imagenes/prod_5-azulera.jpg",
-    "nombre" => "Azulera",
-    "precio" => "250",
-  ],
-  [
-    "imagen" => "imagenes/prod_6-fusion.jpg",
-    "nombre" => "Fusion",
-    "precio" => "250",
-  ]
-];
+// $productos = [
+//   [
+//     "imagen" => "imagenes/prod_1-flor.jpg",
+//     "nombre" => "Flor",
+//     "precio" => "250",
+//   ],
+//   [
+//     "imagen" => "imagenes/prod_2-verdis.jpg",
+//     "nombre" => "Verdis",
+//     "precio" => "250",
+//   ],
+//   [
+//     "imagen" => "imagenes/prod_3-blackSil.jpg",
+//     "nombre" => "Black Sil",
+//     "precio" => "250",
+//   ],
+//   [
+//     "imagen" => "imagenes/prod_4-primavera.jpg",
+//     "nombre" => "Primavera",
+//     "precio" => "650",
+//   ],
+//   [
+//     "imagen" => "imagenes/prod_5-azulera.jpg",
+//     "nombre" => "Azulera",
+//     "precio" => "250",
+//   ],
+//   [
+//     "imagen" => "imagenes/prod_6-fusion.jpg",
+//     "nombre" => "Fusion",
+//     "precio" => "250",
+//   ]
+// ];
 
 ?>
 
@@ -77,7 +77,7 @@ $productos = [
     <div class="ultimasCreaciones">
       <h2>Últimas creaciones</h2>
   <div class="conjuntoUC">
-    @for ($i=0; $i < 6; $i++)
+    @for ($i=0; $i < 5; $i++)
       <div class="cajita">
       <a href="#"> <img class="destacadosHome" src="imagenes/{{$products[$i]->img}}" alt="IMAGEN DE PRODUCTO"> <p class="nombreDestacado" > {{$products[$i]->name}}
       <span class="precio"> {{$products[$i]->price}} </span> <br> </p>
