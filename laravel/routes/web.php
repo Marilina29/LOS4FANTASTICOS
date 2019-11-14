@@ -20,4 +20,7 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/agregoProducto', 'ProductsController@create');
+
 Route::post('/agregoProducto', 'ProductsController@store');
+
+Route::get('/lista-productos', 'ProductsController@index' );

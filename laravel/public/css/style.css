@@ -337,6 +337,32 @@ p.errores{
   font-size: 16px;
   color: #624a42;
 }
+
+
+.listita{
+  display: contents;
+}
+.cajaProductos{
+  width: 20%;
+}
+
+.conjuntoUCproductos{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0px;
+}
+
+.uCProducto{
+  width: 80%;
+}
+.mainProds{
+  display: flex;
+    position: relative;
+    bottom: -90px;
+    z-index: 10;
+}
 /* tablet*/
 @media (max-width:800px){
 .aheader{
