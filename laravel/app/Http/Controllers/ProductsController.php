@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Product;
+use App\Category;
+use App\Style;
 
 class ProductsController extends Controller
 {
@@ -23,7 +26,9 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        //
+        $categories = Category::all();
+        $styles = Style::all();
+        return view('agregoProducto', compact('categories', 'styles'));
     }
 
     /**
@@ -32,9 +37,26 @@ class ProductsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $req)
     {
-        //
+
+
+      $ruta = $req->file('img')->store('public/imgagenes'); //Guarda la imagen en el filesistem
+      $nombreImg = basename($ruta);
+
+      $product = new Product();
+
+        $product->name = $req['name'];
+        $product->code = $req['code'];
+        $product->category_id = $req['category'];
+        $product->description = $req['description'];
+        $product->color = $req['color'];
+        $product->price = $req['price'];
+        $product->style_id = $req['style'];
+        $product->img = $nombreImg; //El que nos da laravel
+        $product->save();
+
+      return redirect('/');
     }
 
     /**
