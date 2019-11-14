@@ -6,7 +6,7 @@ use App\Category;
 use Faker\Generator as Faker;
 
 $factory->define(Category::class, function (Faker $faker) {
-    $categorias = ['collares', 'pendientes', 'pulseras', 'aros'];
+    $categorias = ['collares', 'aros', 'pulseras', 'otros'];
     return [
         'name' => $faker->randomElement($categorias)
         //

@@ -9,8 +9,8 @@ $factory->define(Style::class, function (Faker $faker) {
     return [
       'name'=>$faker->unique()->name,
       'price' => $faker->numberBetween($min = 200, $max = 300),
-      'units' => $faker->numberBetween($min = 1, $max = 10),
-      'category_id' => $faker->numberBetween($min = 1, $max = 5),
+      'units' => $faker->numberBetween($min = 1, $max = 6),
+      'category_id' => $faker->numberBetween($min = 1, $max = 4),
 
 
         //
