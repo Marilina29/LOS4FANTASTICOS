@@ -13,7 +13,9 @@ $factory->define(Product::class, function (Faker $faker) {
         'description' => $faker->word,
         'color' => $faker->colorName,
         'price' => $faker->numberBetween($min = 200, $max = 300),
-        'img' => $faker->randomElement($imagenes)
+        'img' => $faker->randomElement($imagenes),
+        // 'category_id' => $faker->numberBetween($min = 1, $max = 5),
+        'style_id' => $faker->numberBetween($min = 1, $max = 5),
 
     ];
 });

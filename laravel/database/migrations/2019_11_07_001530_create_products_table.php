@@ -22,8 +22,8 @@ class CreateProductsTable extends Migration
             $table->integer('price');
             $table->bigInteger('style_id')->unsigned();
             $table->foreign('style_id')->references('id')->on('styles')->onDelete('cascade');
-            $table->bigInteger('category_id')->unsigned();
-            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
+            // $table->bigInteger('category_id')->unsigned();
+            // $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->string('img');
             $table->timestamps();
         });
