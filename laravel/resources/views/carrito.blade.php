@@ -36,8 +36,8 @@
     <div class="resumen">
       <h4>Resumen</h4>
       <div class="resumensub">
-        <h2>Subtotal</h2>
-        <h2>1234,55</h2>
+        <h6>Subtotal</h6>
+        <h6>1234,55</h6>
       </div>
       <div class="resumentot">
         <h3>Total</h3>
