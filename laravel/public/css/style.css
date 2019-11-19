@@ -18,6 +18,8 @@ header{
   background-color: #000;
   overflow: hidden;
   z-index: 100;
+  justify-content: space-between;
+  display: flex;
 }
 a{
   color: #252525;
@@ -40,9 +42,6 @@ select {
 .ulheader{
   padding-top: 27px;
   margin-left: 0px;
-  width: 50%;
-  padding-left: 10px;
-  float: left;
 }
 
 .aheader{
