@@ -57,7 +57,17 @@
           @endguest
                 </ul>
       </li>
-      <li class="naviconos"> <a href="buscar.php"><i class="colorb fas fa-search"></i></a> </li>
+      <li class="naviconos"> <a href="#"><i class="colorb fas fa-search"></i></a>
+        <ul class="dropdown search">
+        <form class="" action="/buscador" method="GET">
+          @csrf
+          <div>
+            <input style="width: 171px; height: 25px" type="text" name="search" value="">
+          </div>
+          <button type="submit" style="display:none"></button>
+        </form>
+        </ul>
+       </li>
       <li class="naviconos"> <a href="carrito.php"><i class="colorb fas fa-shopping-bag"></i></a> </li>
       <li class="navbar"> <a href="#menu"><i class="fas fa-bars"></i></i></a> </li>
     </ul>

@@ -24,3 +24,9 @@ Route::get('/agregoProducto', 'ProductsController@create');
 Route::post('/agregoProducto', 'ProductsController@store');
 
 Route::get('/lista-productos', 'ProductsController@index' );
+
+Route::get('/buscador', 'ProductsController@search' );
+
+Route::get('/busco', function(){
+  return view('buscador');
+} );

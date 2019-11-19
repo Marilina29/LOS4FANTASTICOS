@@ -25,6 +25,7 @@ a{
 select {
   width: 45%;
 }
+
 .logo {
   display: block;
   margin-left: 40px;
@@ -363,6 +364,11 @@ p.errores{
     bottom: -90px;
     z-index: 10;
 }
+ul.dropdown.search{
+  top: 21px;
+  right: 99px;
+
+}
 /* tablet*/
 @media (max-width:800px){
 .aheader{
@@ -445,7 +451,13 @@ form button.boton{
       color: white;
       font-size: 25px;
     }
+ul.dropdown.search {
+        top: 17px;
+        right: 129px;
+    }
 }
+
+
 /* mobile*/
 @media (max-width:460px){
   /*menu*/
@@ -591,5 +603,10 @@ form button.boton, .cabecera {
 .formulario{
   width: 100%;
 }
+ul.dropdown.search {
+    top: 8px;
+    right: 110px;
 }
+}
+
 /* LOGIN MOBILE */

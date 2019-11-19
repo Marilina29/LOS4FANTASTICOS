@@ -109,5 +109,13 @@ class ProductsController extends Controller
         //
     }
 
+    public function search(){
+    $search = $_GET["search"];
+    $products = Product::where('name', 'like', "%$search%")->paginate(15);
+    $products->withPath('?search=' . $_GET["search"]);
+    $vac = compact('products');
+    return view('products', $vac);
+    }
+
 
 }
