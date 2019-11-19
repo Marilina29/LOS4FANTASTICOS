@@ -19,6 +19,10 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/carrito.css') }}" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -58,7 +62,23 @@
                 </ul>
       </li>
       <li class="naviconos"> <a href="buscar.php"><i class="colorb fas fa-search"></i></a> </li>
-      <li class="naviconos"> <a href="carrito.php"><i class="colorb fas fa-shopping-bag"></i></a> </li>
+      @if (!Auth::guest())
+        <li class="naviconos">
+          <form action="{{ route('carrito') }}" method="POST">
+            @csrf
+            <input type="hidden" name="usuario" value="{{ Auth::user()->id }}">
+            <button type="submit" class="btn btn-dark bg-transparent ">
+              <i class=" colorb fas fa-shopping-bag"></i>
+            </button>
+          </form>
+        </li>
+      @else
+        <li>
+          <a class="logs" href="{{ route('login') }}">
+            <i class=" colorb fas fa-shopping-bag"></i>
+          </a>
+        </li>
+      @endif
       <li class="navbar"> <a href="#menu"><i class="fas fa-bars"></i></i></a> </li>
     </ul>
   </header>
