@@ -1,9 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<?php
-dd($orders);
-?>
+
 <div>
   <div class="contenedor">
     <div class="contenedorarticulos">

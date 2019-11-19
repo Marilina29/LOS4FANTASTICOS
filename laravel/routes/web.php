@@ -25,4 +25,4 @@ Route::post('/agregoProducto', 'ProductsController@store');
 
 Route::get('/lista-productos', 'ProductsController@index' );
 
-Route::post('/carrito', 'CarritoController@index')->name('carrito');
+Route::get('/carrito', 'CarritoController@index')->name('carrito')->middleware('auth');
