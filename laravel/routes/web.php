@@ -27,6 +27,4 @@ Route::get('/lista-productos', 'ProductsController@index' );
 
 Route::get('/buscador', 'ProductsController@search' );
 
-Route::get('/busco', function(){
-  return view('buscador');
-} );
+Route::get('/carrito', 'CarritoController@index')->name('carrito')->middleware('auth');

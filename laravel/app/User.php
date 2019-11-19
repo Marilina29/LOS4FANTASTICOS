@@ -32,7 +32,7 @@ class User extends Authenticatable
         //     'name', 'email', 'password'
         // ];
             protected $guarded = [
-          
+
             ];
 
         /**
@@ -55,7 +55,11 @@ class User extends Authenticatable
 
         public function product(){
           return $this->hasMany('App\Product', 'user_id');
-        }
+          }
+
+          public function order(){
+            return $this->hasMany('App\Order', 'user_id');
+          }
 
 
 
