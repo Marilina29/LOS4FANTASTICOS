@@ -358,10 +358,25 @@ p.errores{
   width: 80%;
 }
 .mainProds{
-  display: flex;
+    display: flex;
     position: relative;
+    justify-content: flex-end;
     bottom: -90px;
     z-index: 10;
+}
+
+aside {
+    width: 16%;
+    text-align: left;
+    position: fixed;
+    left: 40px;
+    top:90px;
+    margin-left: 10px;
+    z-index: 11;
+}
+aside li a{
+  font-family: 'Pacifico', cursive;
+  font-size: 26px;
 }
 /* tablet*/
 @media (max-width:800px){
@@ -445,6 +460,13 @@ form button.boton{
       color: white;
       font-size: 25px;
     }
+    .cajaProductos{
+        width: 32%;
+        padding-bottom: 20px;
+}
+aside li a{
+  font-size: 22px;
+}
 }
 /* mobile*/
 @media (max-width:460px){
@@ -591,5 +613,28 @@ form button.boton, .cabecera {
 .formulario{
   width: 100%;
 }
-}
 /* LOGIN MOBILE */
+aside{
+  position: relative;
+  top: 70px;
+  left:auto;
+  text-align: center;
+  width: 100%;
+}
+aside ul{
+
+  display: flex;
+  flex-direction: row;
+}
+aside li a{
+  font-size: 16px;
+  padding-right: 10px;
+}
+.uCProducto{
+  width: 100%;
+}
+.cajaProductos{
+    width: 50%;
+    padding-bottom: 20px;
+}
+}

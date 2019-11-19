@@ -24,7 +24,7 @@
   <header>
     <a class="logo" href="/"> <img src="imagenes/glassBeat-logo.png" width="150" height="50"  alt="GlassBeat"> </a>
     <ul class="ulheader">
-      <li class="liheader"> <a class="aheader" href="shop.php"> SHOP </a> </li>
+      <li class="liheader"> <a class="aheader" href="/lista-productos"> SHOP </a> </li>
       <li class="liheader"> <a class="aheader" href="historia.php"> HISTORIA </a> </li>
       <li class="liheader"> <a class="aheader" href="mailto:marilina_29@hotmail.com"> CONTACTO </a> </li>
       <li class="liheader"> <a class="aheader" href="index.php#envios"> ENVIOS </a> </li>

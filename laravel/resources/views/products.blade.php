@@ -6,6 +6,14 @@
 @section('h1', "Lista de productos")
 
 @section('content')
+  <aside>
+    <ul>
+      <li><a href="#">Collares</a></li>
+      <li><a href="#">Aros</a></li>
+      <li><a href="#">Pulseras</a></li>
+      <li><a href="#">Otros</a></li>
+    </ul>
+  </aside>
   <div class="mainProds marginados">
     <div class="ultimasCreaciones uCProducto">
           <div class="conjuntoUCproductos">
@@ -21,4 +29,5 @@
 
   </div>
     </div>
+
 @endsection
