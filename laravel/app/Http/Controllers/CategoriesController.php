@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Product;
 
 class CategoriesController extends Controller
 {
@@ -11,9 +12,10 @@ class CategoriesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        //
+    public function showCollares()
+  {
+      $collares = Product::where("category_id","=", 1)
+      ->get();
     }
 
     /**

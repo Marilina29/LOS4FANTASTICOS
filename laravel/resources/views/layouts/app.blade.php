@@ -19,12 +19,16 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/carrito.css') }}" rel="stylesheet">
 </head>
 <body>
   <header>
     <a class="logo" href="/"> <img src="imagenes/glassBeat-logo.png" width="150" height="50"  alt="GlassBeat"> </a>
     <ul class="ulheader">
-      <li class="liheader"> <a class="aheader" href="shop.php"> SHOP </a> </li>
+      <li class="liheader"> <a class="aheader" href="/lista-productos"> SHOP </a> </li>
       <li class="liheader"> <a class="aheader" href="historia.php"> HISTORIA </a> </li>
       <li class="liheader"> <a class="aheader" href="mailto:marilina_29@hotmail.com"> CONTACTO </a> </li>
       <li class="liheader"> <a class="aheader" href="index.php#envios"> ENVIOS </a> </li>
@@ -58,7 +62,23 @@
                 </ul>
       </li>
       <li class="naviconos"> <a href="buscar.php"><i class="colorb fas fa-search"></i></a> </li>
-      <li class="naviconos"> <a href="carrito.php"><i class="colorb fas fa-shopping-bag"></i></a> </li>
+      @if (!Auth::guest())
+        <li class="naviconos">
+          <form action="{{ route('carrito') }}" method="POST">
+            @csrf
+            <input type="hidden" name="usuario" value="{{ Auth::user()->id }}">
+            <button type="submit" class="btn btn-dark bg-transparent ">
+              <i class=" colorb fas fa-shopping-bag"></i>
+            </button>
+          </form>
+        </li>
+      @else
+        <li>
+          <a class="logs" href="{{ route('login') }}">
+            <i class=" colorb fas fa-shopping-bag"></i>
+          </a>
+        </li>
+      @endif
       <li class="navbar"> <a href="#menu"><i class="fas fa-bars"></i></i></a> </li>
     </ul>
   </header>
