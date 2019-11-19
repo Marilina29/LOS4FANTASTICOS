@@ -19,7 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-
+    <link href="{{ asset('css/carrito.css') }}" rel="stylesheet">
 </head>
 <body>
   <header>

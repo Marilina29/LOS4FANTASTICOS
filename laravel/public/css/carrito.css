@@ -1,11 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body{
-  background-color: #bbb1af;
-}
+
 .contenedor{
   width: 90%;
   background-color: #bbb1af;
@@ -173,7 +166,7 @@ h3{
 }
 
 
-h1{
+h5{
 
   display: flex;
   justify-content: center;

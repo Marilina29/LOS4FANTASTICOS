@@ -6,7 +6,7 @@
   <div class="contenedor">
     <div class="contenedorarticulos">
       <div>
-        <h1>Mi Carrito</h1>
+        <h5>Mi Carrito</h5>
       </div>
       <?php for ($i=0; $i < count($orders) ; $i++): ?>
       <div class="desimpo">
