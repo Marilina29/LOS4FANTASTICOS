@@ -51,7 +51,7 @@
     </div>
     <div id="envios" class="envios">
       <h2>Envíos</h2>
-      <p class="marginados">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="marginados">Tu pedido puede ser recibido por cualquier persona mayor de 18 años que se encuentre en el domicilio registrado. De no encontrarse nadie en el momento de la  entrega, el correo dejara un aviso de visita. Si necesitas reprogramar la entrega,  podés comunicarte con Andreani al 0810-122-3000. Recordá tener a mano el número  de guía enviado por mail.</p>
     </div>
 </div>
 <div >

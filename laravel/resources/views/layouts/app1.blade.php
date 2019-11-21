@@ -11,13 +11,12 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-  <script src="{{ asset('js/java.js') }}" defer></script>
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/62ba28ee55.js"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Styles -->
 
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
@@ -25,20 +24,13 @@
 </head>
 <body>
   <header>
-
-
-<div class="topnav" id="myTopnav">
-    <a class="logo active" href="/"> <img src="imagenes/glassBeat-logo.png" width="150" height="50"  alt="GlassBeat"> </a>
-<a class="aheader" href="/lista-productos"> SHOP </a>
-<a class="aheader" href="historia.php"> HISTORIA </a>
- <a class="aheader" href="mailto:marilina_29@hotmail.com"> CONTACTO </a>
-<a class="aheader" href="index.php#envios"> ENVIOS </a>
-
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-
-
-</div>
-
+    <a class="logo" href="/"> <img src="imagenes/glassBeat-logo.png" width="150" height="50"  alt="GlassBeat"> </a>
+    <ul class="ulheader">
+      <li class="liheader"> <a class="aheader" href="/lista-productos"> SHOP </a> </li>
+      <li class="liheader"> <a class="aheader" href="historia.php"> HISTORIA </a> </li>
+      <li class="liheader"> <a class="aheader" href="mailto:marilina_29@hotmail.com"> CONTACTO </a> </li>
+      <li class="liheader"> <a class="aheader" href="index.php#envios"> ENVIOS </a> </li>
+    </ul>
 
     <ul class="uliconos">
 
@@ -91,6 +83,7 @@
           </a>
         </li>
       @endif
+      <li class="navbar"> <a href="#menu"><i class="fas fa-bars"></i></i></a> </li>
     </ul>
   </header>
 
