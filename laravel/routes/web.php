@@ -25,6 +25,8 @@ Route::post('/agregoProducto', 'ProductsController@store');
 
 Route::get('/lista-productos', 'ProductsController@index' );
 
+Route::get('/product/{id}', 'ProductsController@show');
+
 Route::get('/buscador', 'ProductsController@search' );
 
 Route::get('/carrito', 'CarritoController@index')->name('carrito')->middleware('auth');

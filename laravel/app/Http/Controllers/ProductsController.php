@@ -21,6 +21,11 @@ class ProductsController extends Controller
     $vac = compact('products');
     return view('products',$vac);
   }
+  public function directory()
+      {
+        $actores = Product::all();
+        return view('products', compact('products'));
+      }
 
     /**
      * Show the form for creating a new resource.
@@ -44,7 +49,7 @@ class ProductsController extends Controller
     {
 
 
-      $ruta = $req->file('img')->store('public/imgagenes'); //Guarda la imagen en el filesistem
+      $ruta = $req->file('img')->store('public/imagenes'); //Guarda la imagen en el filesistem
       $nombreImg = basename($ruta);
 
       $product = new Product();

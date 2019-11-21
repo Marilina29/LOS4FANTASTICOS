@@ -381,6 +381,18 @@ ul.dropdown.search{
   top: 21px;
   right: 99px;
 }
+
+ul.pagination {
+  width: 100%;
+  font-size: 16px;
+  margin-top: 20px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-link {
+    padding: 7px;
+}
 /* tablet*/
 @media (max-width:800px){
 .aheader{
