@@ -18,7 +18,8 @@ class UsersController extends Controller
     public function index()
     {
         $user= User::find(Auth::user()->id);
-        $orders = Order::all()->where('user_id', '=', Auth::user()->id)->where('status', '=', 1)->groupBy('order_number');
+        $orders = Order::where('user_id', '=', Auth::user()->id)->where('status', '=', 1)->get()
+                              ->groupBy('order_number');
 
 
         // $numCompra = $orders->pluck('order_number')->unique();
