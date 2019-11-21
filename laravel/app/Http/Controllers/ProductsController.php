@@ -17,14 +17,16 @@ class ProductsController extends Controller
     public function index()
     {
     $products = Product::paginate(15);
+    $categories = Category::all();
 
-    $vac = compact('products');
+    $vac = compact('products', 'categories');
     return view('products',$vac);
   }
   public function directory()
       {
-        $actores = Product::all();
-        return view('products', compact('products'));
+        $products = Product::all();
+        $categories = Category::all();
+        return view('products', compact('products', 'categories'));
       }
 
     /**
@@ -76,8 +78,8 @@ class ProductsController extends Controller
     public function show(Product $product)
     {
         $productDetail = Product::find($product->id);
-
-        return view('product', compact('productDetail'));
+        $categories = Category::all();
+        return view('product', compact('productDetail', 'categories'));
     }
 
     /**
@@ -116,10 +118,29 @@ class ProductsController extends Controller
 
     public function search(){
     $search = $_GET["search"];
+    $categories = Category::all();
     $products = Product::where('name', 'like', "%$search%")->paginate(15);
     $products->withPath('?search=' . $_GET["search"]);
-    $vac = compact('products');
+    $vac = compact('products', 'categories');
     return view('products', $vac);
+    }
+
+    public function filtrar($id){
+      $products = Product::where('category_id', '=', $id)->paginate(15);
+      $categories = Category::all();
+      $vac = compact('products', 'categories');
+      return view('products', $vac);
+    }
+
+    public function vista($id){
+      $product = Product::find($id);
+      $vac = compact('product');
+      return view('vistaProducto', $vac);
+    }
+    public function carrito($id){
+      $product = Product::find($id);
+      $vac = compact('product');
+      return view('vistaProducto', $vac);
     }
 
 

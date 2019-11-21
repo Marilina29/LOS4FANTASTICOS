@@ -1,13 +1,13 @@
--- MySQL dump 10.13  Distrib 8.0.17, for macos10.14 (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.26, for Linux (x86_64)
 --
--- Host: 127.0.0.1    Database: glassbeat
+-- Host: localhost    Database: glassbeat
 -- ------------------------------------------------------
--- Server version	5.7.26
+-- Server version	5.7.26-0ubuntu0.18.10.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -21,7 +21,7 @@
 
 DROP TABLE IF EXISTS `adress`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `adress` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `street` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -51,7 +51,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `categories`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `categories` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -67,7 +67,7 @@ CREATE TABLE `categories` (
 
 LOCK TABLES `categories` WRITE;
 /*!40000 ALTER TABLE `categories` DISABLE KEYS */;
-INSERT INTO `categories` VALUES (1,'collares','2019-11-14 16:50:52','2019-11-14 16:50:52'),(2,'Pulseras','2019-11-14 16:50:52','2019-11-14 16:50:52'),(3,'Aros','2019-11-14 16:50:52','2019-11-14 16:50:52'),(4,'Otros','2019-11-14 16:50:52','2019-11-14 16:50:52');
+INSERT INTO `categories` VALUES (1,'Collares','2019-11-14 16:50:52','2019-11-14 16:50:52'),(2,'Pulseras','2019-11-14 16:50:52','2019-11-14 16:50:52'),(3,'Aros','2019-11-14 16:50:52','2019-11-14 16:50:52'),(4,'Otros','2019-11-14 16:50:52','2019-11-14 16:50:52');
 /*!40000 ALTER TABLE `categories` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -77,7 +77,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `migrations`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `migrations` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -102,22 +102,24 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `orders`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `orders` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `order_number` int(11) NOT NULL,
-  `code_id` bigint(20) unsigned NOT NULL,
+  `order_number` int(11) DEFAULT NULL,
   `status` tinyint(4) NOT NULL,
   `user_id` bigint(20) unsigned NOT NULL,
   `price` int(11) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
+  `product_id` bigint(20) unsigned NOT NULL,
+  `name` varchar(45) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` varchar(45) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `orders_code_id_foreign` (`code_id`),
   KEY `orders_user_id_foreign` (`user_id`),
-  CONSTRAINT `orders_code_id_foreign` FOREIGN KEY (`code_id`) REFERENCES `products` (`id`) ON DELETE CASCADE,
+  KEY `orders_product_id_foreign_idx` (`product_id`),
+  CONSTRAINT `orders_product_id_foreign` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `orders_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -126,6 +128,7 @@ CREATE TABLE `orders` (
 
 LOCK TABLES `orders` WRITE;
 /*!40000 ALTER TABLE `orders` DISABLE KEYS */;
+INSERT INTO `orders` VALUES (1,12,1,7,77,'2019-11-21 19:45:40','2019-11-21 19:45:40',4,'nombvre','ert'),(14,0,0,7,250,'2019-11-21 19:45:40','2019-11-21 19:45:40',1,'Dalaila','ut'),(17,0,0,7,350,'2019-11-21 20:23:01','2019-11-21 20:23:01',3,'BlueMoon','pariatur');
 /*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -135,7 +138,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `password_resets`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `password_resets` (
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -159,7 +162,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `products`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `products` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -197,7 +200,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `roles`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `roles` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -223,7 +226,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `styles`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `styles` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -255,7 +258,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `users` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -269,7 +272,7 @@ CREATE TABLE `users` (
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `users_email_unique` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -278,7 +281,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Birdie Keeling','sint','gerhold.kurt@example.net',42421757,703845,'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi','2019-11-14 16:50:52','2019-11-14 16:50:52','GlGxVGvHsc'),(2,'Bette Thompson','sed','zita93@example.net',72423768,257345,'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi','2019-11-14 16:50:52','2019-11-14 16:50:52','UOy6miEecV'),(3,'Vladimir Mertz','dolores','loy86@example.net',78571011,328988,'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi','2019-11-14 16:50:52','2019-11-14 16:50:52','tIwxCI7ceP'),(4,'Buck Maggio','molestiae','viva.dibbert@example.net',19446904,593558,'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi','2019-11-14 16:50:52','2019-11-14 16:50:52','bXrdl4wv9J'),(5,'Jack Macejkovic DVM','et','jessika29@example.com',16438668,215406,'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi','2019-11-14 16:50:52','2019-11-14 16:50:52','7M40F15j7d'),(6,'Marilina','Rozenberg','marilina_29@hotmail.com',25096464,1553399494,'$2y$10$gnq6WvyGNhdsYO6FNAJLaulHIQ6JagP9OEh/oc4QQnZO3Ocj9Jxw6','2019-11-19 07:11:46','2019-11-19 07:11:46','mj952wJMx2EPlRaF1aKx94potBDb6DfS9YuraQkxoCyVRdPQ5HrTWUFLALhJ');
+INSERT INTO `users` VALUES (1,'Birdie Keeling','sint','gerhold.kurt@example.net',42421757,703845,'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi','2019-11-14 16:50:52','2019-11-14 16:50:52','GlGxVGvHsc'),(2,'Bette Thompson','sed','zita93@example.net',72423768,257345,'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi','2019-11-14 16:50:52','2019-11-14 16:50:52','UOy6miEecV'),(3,'Vladimir Mertz','dolores','loy86@example.net',78571011,328988,'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi','2019-11-14 16:50:52','2019-11-14 16:50:52','tIwxCI7ceP'),(4,'Buck Maggio','molestiae','viva.dibbert@example.net',19446904,593558,'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi','2019-11-14 16:50:52','2019-11-14 16:50:52','bXrdl4wv9J'),(5,'Jack Macejkovic DVM','et','jessika29@example.com',16438668,215406,'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi','2019-11-14 16:50:52','2019-11-14 16:50:52','7M40F15j7d'),(6,'Marilina','Rozenberg','marilina_29@hotmail.com',25096464,1553399494,'$2y$10$gnq6WvyGNhdsYO6FNAJLaulHIQ6JagP9OEh/oc4QQnZO3Ocj9Jxw6','2019-11-19 07:11:46','2019-11-19 07:11:46','mj952wJMx2EPlRaF1aKx94potBDb6DfS9YuraQkxoCyVRdPQ5HrTWUFLALhJ'),(7,'flor','ki','florki@gmail.com',2334,46544578,'$2y$10$Hd944Hc3jNUOuCz84cfQ2OgRi.tEw/n3wK.rax1mffDJB/i0U3DM2','2019-11-21 17:20:27','2019-11-21 17:20:27',NULL);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -291,4 +294,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-20 23:53:31
+-- Dump completed on 2019-11-21 14:50:48

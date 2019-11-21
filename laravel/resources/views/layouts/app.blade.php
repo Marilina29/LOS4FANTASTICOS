@@ -23,7 +23,7 @@
 </head>
 <body>
   <header>
-    <a class="logo" href="/"> <img src="imagenes/glassBeat-logo.png" width="150" height="50"  alt="GlassBeat"> </a>
+    <a class="logo" href="/"> <img src="/imagenes/glassBeat-logo.png" width="150" height="50"  alt="GlassBeat"> </a>
     <ul class="ulheader">
       <li class="liheader"> <a class="aheader" href="/lista-productos"> SHOP </a> </li>
       <li class="liheader"> <a class="aheader" href="historia.php"> HISTORIA </a> </li>
@@ -44,7 +44,7 @@
         @endif
         @else
 
-<li><a <a id="navbarDropdown" class="logs" href="#" role="button">
+<li><a <a id="navbarDropdown" class="logs" href="/perfil" role="button">
     {{ Auth::user()->name }} <span class="caret"></span>
 </a></li>
 <li><a class="logs" href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -69,7 +69,7 @@
         </form>
         </ul>
        </li>
-       
+
     @if (!Auth::guest())
         <li>
           <a  class="naviconos" href="/carrito">

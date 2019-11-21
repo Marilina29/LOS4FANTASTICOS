@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
+use App\Order;
+use App\Product;
+use Auth;
 
 class UsersController extends Controller
 {
@@ -13,7 +17,24 @@ class UsersController extends Controller
      */
     public function index()
     {
+        $user= User::find(Auth::user()->id);
+        $orders = Order::all()->where('user_id', '=', Auth::user()->id)->where('status', '=', 1)->groupBy('order_number');
+
+
+        // $numCompra = $orders->pluck('order_number')->unique();
+        // // dd($numCompra);
+        // $carrito = [];
         //
+        // foreach ($numCompra as $key => $num) {
+        //   foreach ($orders as $k => $order) {
+        //     if($order->order_number = $num){
+        //       $carrito[$num][] = $order;
+        //     }
+        //   }
+        // }
+
+
+        return view('perfil', compact('orders'));
     }
 
     /**
