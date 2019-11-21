@@ -467,7 +467,7 @@ ul.pagination {
 }
 
 ul li ul.dropdown{
-    right:167px;
+    right:122px;
     top: 9px;
 }
 footer{
@@ -517,7 +517,7 @@ aside li a{
 }
 ul.dropdown.search {
         top: 17px;
-        right: 129px;
+        right: 93px;
 }
 /* dropdown*/
 
@@ -528,9 +528,9 @@ ul.dropdown.search {
 
 .topnav.responsive {position: relative;}
 .topnav.responsive .icon {
-  position: absolute;
-  right: 0;
-  top: 0;
+    position: absolute;
+    right: -22px;
+    top: 12px;
 }
 .topnav.responsive a {
   display: flex;
@@ -687,7 +687,7 @@ form button.boton, .cabecera {
 }
 ul.dropdown.search {
     top: 13px;
-    right: 110px;
+    right: 70px;
 }
 
 
