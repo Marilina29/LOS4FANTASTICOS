@@ -33,10 +33,10 @@ select {
   margin-left: 40px;
   float: left;
   height: 60px;
-  margin-top: 10px;
 }
 
-.liheader {float: left;
+.liheader {
+  display: flex;
   margin-left: 10px;
 }
 
@@ -48,6 +48,7 @@ select {
 .aheader{
   color: white;
   font-size: 1.1rem;
+  margin-top: 18px;
 }
 
 .colorb{
@@ -121,7 +122,7 @@ input#remember
 
 }
 li.naviconos{
-  display: inline-block;
+  display: flex;
 }
 
 /* footer */
@@ -393,6 +394,38 @@ ul.pagination {
 .page-link {
     padding: 7px;
 }
+
+/*dropdown*/
+
+.topnav {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 40px;
+    margin-left: 0px;
+}
+
+.topnav a {
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 10px;
+}
+
+.topnav a:hover {
+  color: #bbb1af;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+  padding-top: 18px;
+}
+
+
 /* tablet*/
 @media (max-width:800px){
 .aheader{
@@ -434,7 +467,7 @@ ul.pagination {
 }
 
 ul li ul.dropdown{
-    right:167px;
+    right:122px;
     top: 9px;
 }
 footer{
@@ -484,8 +517,26 @@ aside li a{
 }
 ul.dropdown.search {
         top: 17px;
-        right: 129px;
+        right: 93px;
 }
+/* dropdown*/
+
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+  display: flex;
+}
+
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+    position: absolute;
+    right: -22px;
+    top: 12px;
+}
+.topnav.responsive a {
+  display: flex;
+}
+
+
 }
 
 
@@ -496,10 +547,10 @@ ul.dropdown.search {
     display: none;
   }
   .uliconos {
-    margin-top: 16px;
-    margin-right: 10px;
-    padding-left: 4px;
-    width: 153px;
+    margin-top: 24px;
+      margin-right: 17px;
+      padding-left: 4px;
+      width: 153px;
   }
   .logo img{
     width: 120px;
@@ -511,8 +562,8 @@ ul.dropdown.search {
     height: 45px;
   }
   ul li ul.dropdown {
-    right: 150px;
-    top: 1px;
+    right: 103px;
+    top: 10px;
     background-color: black;
   }
   .logs{
@@ -635,8 +686,8 @@ form button.boton, .cabecera {
   width: 100%;
 }
 ul.dropdown.search {
-    top: 8px;
-    right: 110px;
+    top: 13px;
+    right: 70px;
 }
 
 
@@ -663,5 +714,11 @@ aside li a{
 .cajaProductos{
     width: 50%;
     padding-bottom: 20px;
+}
+.topnav {
+    padding: 10px;
+}
+a.aheader {
+    font-size: 0.9rem;
 }
 }
