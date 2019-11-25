@@ -11,6 +11,7 @@
       @foreach ($orders as $order)
         <div class="itemCarro">
           <h3>{{$order->name}}</h3>
+          <img src="/storage/imagenes/{{$order->img}}" alt="">
           <p>Precio: {{$order->price}}</p>
           <form class="quitar" action="/sacarCarrito" method="post">
             {{ csrf_field() }}

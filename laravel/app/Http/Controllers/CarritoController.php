@@ -36,6 +36,7 @@ class CarritoController extends Controller
       $item->status=0;
       $item->user_id=Auth::user()->id;
       $item->product_id=$product->id;
+      $item->img=$product->img;
 
       $item->save();
 
