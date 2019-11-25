@@ -2,17 +2,16 @@
 
 @section('content')
 
-<div>
-  <div class="conjuntoUCproductos">
+<div class="grupoFicha">
     <div class="imagenProducto">
-      <img src="/storage/imagenes/{{$product->img}}" alt="" id=imgficha>
+      <img src="/storage/imagenes/{{$product->img}}" alt="{{$product->name}}">
     </div>
-    <div class="infoProducto">
-      <div class="">
-        <h3>{{$product->name}}</h3>
+      <div class="dataProducto">
+        <h6>{{$product->name}}</h6>
         <p>{{$product->description}}</p>
-        <p>Precio: {{$product->price}}</p>
-      </div>
+              </div>
+        <div class="precioFicha" >Precio: $ {{$product->price}}</div>
+
       <div class="">
         <a href="/lista-productos"><button class="botonComprar" type="button" name="button">VOLVER</button></a>
 
@@ -30,11 +29,9 @@
               <button class="botonComprar" type="submit" name="button">ELIMINO PRODUCTO</button>
             </form>
           </div>
-        @endif 
+        @endif
 
       </div>
     </div>
-  </div>
-</div>
 
 @endsection

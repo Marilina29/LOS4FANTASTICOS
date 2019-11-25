@@ -459,7 +459,38 @@ hr{
 .cierreCarro{
   display: flex;
   align-items: center;
+}
 
+
+/* ficha */
+
+.grupoFicha{
+  width: 100%;
+  display: flex;
+}
+
+.imagenProducto {
+  margin-top: 50px;
+  padding: 40px;
+  width: 50%;
+}
+
+.dataProducto{
+  margin-top: 90px;
+  text-align: left;
+  width: 30%;
+}
+
+.imagenProducto img{
+  width: 100%;
+}
+
+h6{
+  margin: 0px 0px 40px 0px;
+  font-size: 24px;
+}
+.precioFicha{
+  margin-top: 90px;
 }
 /* tablet*/
 @media (max-width:800px){
