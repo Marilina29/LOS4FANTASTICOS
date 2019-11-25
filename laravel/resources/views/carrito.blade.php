@@ -15,7 +15,7 @@
           <form class="" action="/sacarCarrito" method="post">
             {{ csrf_field() }}
             <input type="hidden" name="id" value="{{$order->id}}">
-            <button class="botonComprar" type="submit" name="button">QUITAR</button>
+            <button class="botonComprar botonQuitar" type="submit" name="button">QUITAR</button>
           </form>
         </div>
         @php
@@ -35,5 +35,6 @@
       <button class="botonComprar" type="submit" name="button">COMPRAR</button>
     </form>
 </div>
+
 
 @endsection
