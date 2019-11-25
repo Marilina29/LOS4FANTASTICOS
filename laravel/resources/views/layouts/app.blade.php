@@ -105,5 +105,8 @@
         <li> <a href="mailto:marilina_29@hotmail.com"> <i class="fas fa-paper-plane"></i></a> </li>
       </ul>
     </footer>
+    
+
+    </script>
 </body>
 </html>
