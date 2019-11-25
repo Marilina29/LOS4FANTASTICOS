@@ -72,7 +72,7 @@
         <form class="" action="/buscador" method="GET">
           @csrf
           <div>
-            <input style="width: 171px; height: 25px" type="text" name="search" value="">
+            <input style="width: 171px; height: 25px; font-size: 16px"; type="text" name="search" value="">
           </div>
           <button type="submit" style="display:none"></button>
         </form>

@@ -381,6 +381,7 @@ aside li a{
 ul.dropdown.search{
   top: 21px;
   right: 99px;
+  font-size: 16px;
 }
 
 ul.pagination {
@@ -463,34 +464,70 @@ hr{
 
 
 /* ficha */
-
-.grupoFicha{
-  width: 100%;
+.baseItem{
+  padding: 20px;
+  background-color: #fff;
   display: flex;
 }
+.contenItem{
+  padding: 90px 40px 0 40px;
 
-.imagenProducto {
-  margin-top: 50px;
-  padding: 40px;
-  width: 50%;
 }
+.imagItem{
+  width: 40%;
+  font-size: 20px;
 
-.dataProducto{
-  margin-top: 90px;
-  text-align: left;
-  width: 30%;
 }
-
-.imagenProducto img{
+.imagItem img{
   width: 100%;
 }
-
 h6{
-  margin: 0px 0px 40px 0px;
   font-size: 24px;
+  margin:0 40px 20px 40px;
 }
-.precioFicha{
-  margin-top: 90px;
+.imagItem hr{
+  margin-left: 40px;
+
+}
+.descrItem{
+  margin: 40px 40px 20px 40px;
+  line-height: 36px;
+}
+.precioItem {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    width: 20%;
+}
+.sumarItem{
+  border: 2px solid #666;
+  padding: 10px 20px;
+  text-align: right;
+  font-size: 16px;
+  position: relative;
+  bottom: 67px;
+  text-align: right;
+}
+.botSumarItem{
+  width: 100%;
+  text-align: end;
+  padding-right: 20px;
+}
+.cerrarItem{
+  text-align: right;
+  padding: 15px;
+  width: 100%;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+}
+.admin{
+  border: 2px solid red;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-right: 25px;
+  font-size: 14px;
+  background-color: lightcoral;
 }
 /* tablet*/
 @media (max-width:800px){
@@ -601,7 +638,38 @@ ul.dropdown.search {
 .topnav.responsive a {
   display: flex;
 }
-
+/*ficha*/
+.baseItem{
+  flex-direction: column;
+}
+.imagItem{
+  width: 100%;
+}
+h6{
+  margin: 0;
+}
+.imagItem hr{
+  margin: 40px 0px;
+}
+.precioItem {
+    text-align: left;
+    width: 50%;
+}
+.sumarItem {
+    bottom: 57px;
+}
+  .descrItem {
+    margin: 40px 0;
+}
+.admin {
+    margin: 10px 20px;
+}
+.botSumarItem .admin{
+  transform: translate(0%, -154%);
+}
+.contenItem {
+    padding: 60px 40px 0 40px;
+}
 }
 
 
@@ -613,7 +681,7 @@ ul.dropdown.search {
   }
   .uliconos {
     margin-top: 24px;
-      margin-right: 17px;
+      margin-right: 20px;
       padding-left: 4px;
       width: 153px;
   }
@@ -635,7 +703,7 @@ ul.dropdown.search {
     padding: 5px 2px;
   }
   footer{
-    padding-right: 0px;
+    padding-right: 10px;
   }
 /*contenido*/
 
@@ -785,5 +853,21 @@ aside li a{
 }
 a.aheader {
     font-size: 0.9rem;
+}
+/*ficha*/
+
+.contenItem {
+    padding: 65px 15px 0 15px;
+}
+.descrItem {
+    line-height: 26px;
+    font-size: 16px;
+    margin: 20px 0;
+}
+.imagItem hr{
+  margin: 16px 0px;
+}
+.precioItem {
+    margin-bottom: 61px;
 }
 }
