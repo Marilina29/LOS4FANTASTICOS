@@ -5,6 +5,9 @@
 <div>
   <div class="conjuntoUCproductos">
     <div class="">
+      @php
+        $total = 0;
+      @endphp
       @foreach ($orders as $order)
         <div class="">
           <h3>{{$order->name}}</h3>
@@ -15,7 +18,14 @@
             <button class="botonComprar" type="submit" name="button">QUITAR</button>
           </form>
         </div>
+        @php
+          $total += $order->price;
+        @endphp
       @endforeach
+    </div>
+
+    <div class="">
+      <p>TOTAL: {{$total}}</p>
     </div>
 
     <a href="/lista-productos"><button class="botonComprar" type="button" name="button">AGREGAR PRODUCTOS</button></a>

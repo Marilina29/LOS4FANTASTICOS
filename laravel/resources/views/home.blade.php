@@ -10,22 +10,22 @@
       <div class="grupoCategorias">
 
           <div class="categorias">
-              <a href="#"> <img class="fotos4" src="imagenes/collares.jpg" alt="collares"><img class="fotoCatMobile" src="imagenes/collares-mobile.jpg" alt="collares">
+              <a href="/category/{{1}}"> <img class="fotos4" src="imagenes/collares.jpg" alt="collares"><img class="fotoCatMobile" src="imagenes/collares-mobile.jpg" alt="collares">
               <p>
             collares</p> </a>
           </div>
           <div class="categorias">
-              <a href="#"> <img class="fotos4" src="imagenes/pulseras.jpg" alt="pulseras"><img class="fotoCatMobile" src="imagenes/pulseras-mobile.jpg" alt="pulseras">
+              <a href="/category/{{2}}"> <img class="fotos4" src="imagenes/pulseras.jpg" alt="pulseras"><img class="fotoCatMobile" src="imagenes/pulseras-mobile.jpg" alt="pulseras">
               <p>
             pulseras</p> </a>
           </div>
           <div class="categorias">
-              <a href="#"> <img class="fotos4" src="imagenes/aros.jpg" alt="aros"><img class="fotoCatMobile" src="imagenes/aros-mobile.jpg" alt="aros">
+              <a href="/category/{{3}}"> <img class="fotos4" src="imagenes/aros.jpg" alt="aros"><img class="fotoCatMobile" src="imagenes/aros-mobile.jpg" alt="aros">
               <p>
             aros</p> </a>
           </div>
           <div class="categorias">
-              <a href="#"> <img class="fotos4" src="imagenes/otros.jpg" alt="otros"><img class="fotoCatMobile" src="imagenes/otros-mobile.jpg" alt="otros">
+              <a href="/category/{{4}}"> <img class="fotos4" src="imagenes/otros.jpg" alt="otros"><img class="fotoCatMobile" src="imagenes/otros-mobile.jpg" alt="otros">
               <p>
             otros</p> </a>
           </div>
@@ -42,7 +42,7 @@
   <div class="conjuntoUC">
     @for ($i=0; $i < 6; $i++)
       <div class="cajita">
-      <a href="#"> <img class="destacadosHome" src="/storage/imagenes/{{$products[$i]->img}}" alt="IMAGEN DE PRODUCTO"> <p class="nombreDestacado" > {{$products[$i]->name}}
+      <a href="/vistaProducto/{{$products[$i]->id}}"> <img class="destacadosHome" src="/storage/imagenes/{{$products[$i]->img}}" alt="IMAGEN DE PRODUCTO"> <p class="nombreDestacado" > {{$products[$i]->name}}
       <span class="precio"> {{$products[$i]->price}} </span> <br> </p>
       <button class="botonComprar" type="button" name="button">VER MÁS</button> </a></div>
     @endfor

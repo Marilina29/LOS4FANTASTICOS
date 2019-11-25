@@ -22,6 +22,16 @@
           <button class="botonComprar" type="submit" name="button">COMPRAR</button>
         </form>
 
+        @if(Auth::user()->rol == 100)
+          <div class="">
+            <form class="" action="/eliminoProducto/{{$product->id}}" method="post">
+              {{ csrf_field() }}
+              <input type="hidden" name="id" value={{$product->id}}>
+              <button class="botonComprar" type="submit" name="button">ELIMINO PRODUCTO</button>
+            </form>
+          </div>
+        @endif 
+
       </div>
     </div>
   </div>

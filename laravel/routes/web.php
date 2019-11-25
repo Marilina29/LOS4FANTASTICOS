@@ -19,9 +19,9 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/agregoProducto', 'ProductsController@create');
+Route::get('/agregoProducto', 'ProductsController@create')->middleware('auth')->middleware('roles');
 
-Route::post('/agregoProducto', 'ProductsController@store');
+Route::post('/agregoProducto', 'ProductsController@store')->middleware('auth')->middleware('roles');
 
 Route::get('/lista-productos', 'ProductsController@index' );
 
@@ -33,7 +33,7 @@ Route::get('/carrito', 'CarritoController@index')->name('carrito')->middleware('
 
 Route::get('/category/{id}', 'ProductsController@filtrar' );
 
-Route::get('/vistaProducto/{id}', 'ProductsController@vista' );
+Route::get('/vistaProducto/{id}', 'ProductsController@vista' )->middleware('auth');
 
 Route::get('/carrito', 'CarritoController@index')->middleware('auth');
 
@@ -42,3 +42,5 @@ Route::post('/agregarCarrito', 'CarritoController@store')->middleware('auth');
 Route::post('/sacarCarrito', 'CarritoController@delete')->middleware('auth');
 
 Route::get('/perfil', 'UsersController@index')->middleware('auth');
+
+Route::post('/eliminoProducto/{id}', 'ProductsController@destroy')->middleware('auth')->middleware('roles');
