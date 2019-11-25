@@ -13,6 +13,7 @@
           <h3>{{$order->name}}</h3>
           <img src="/storage/imagenes/{{$order->img}}" alt="">
           <p>Precio: {{$order->price}}</p>
+          <p>Cantidad: {{$order->cant}}</p>
           <form class="quitar" action="/sacarCarrito" method="post">
             {{ csrf_field() }}
             <input type="hidden" name="id" value="{{$order->id}}">

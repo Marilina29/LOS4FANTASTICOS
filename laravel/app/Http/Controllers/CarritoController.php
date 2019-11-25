@@ -26,21 +26,26 @@ class CarritoController extends Controller
     }
 
     public function store(Request $request){
-      $product = Product::find($request->id);
 
-      $item = new Order;
-      $item->name=$product->name;
-      $item->description=$product->description;
-      $item->price=$product->price;
-    //  $item->img=$product->img;
-      $item->status=0;
-      $item->user_id=Auth::user()->id;
-      $item->product_id=$product->id;
-      $item->img=$product->img;
+      $order = Order::where('product_id', '=', $request->id)->first();
+      if($order){
+        $order->cant++;
+        $order->save();
+      } else {
+        $product = Product::find($request->id);
 
-      $item->save();
+        $item = new Order;
+        $item->name=$product->name;
+        $item->description=$product->description;
+        $item->price=$product->price;
+      //  $item->img=$product->img;
+        $item->status=0;
+        $item->user_id=Auth::user()->id;
+        $item->product_id=$product->id;
+        $item->img=$product->img;
 
-
+        $item->save();
+      }
 
       return redirect('/carrito');
 
