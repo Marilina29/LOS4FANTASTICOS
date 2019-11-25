@@ -30,7 +30,7 @@
               <button class="botonComprar" type="submit" name="button">ELIMINO PRODUCTO</button>
             </form>
           </div>
-        @endif 
+        @endif
 
       </div>
     </div>

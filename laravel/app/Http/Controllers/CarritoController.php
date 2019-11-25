@@ -51,12 +51,22 @@ class CarritoController extends Controller
 
     }
 
+    public function masUno(Request $request){
+      $order = Order::find($request->id);
+      $order->cant++;
+      $order->save();
+      return redirect('/carrito');
+
+    }
+
     public function delete(Request $request){
       $item = Order::find($request->id);
-      $item->delete();
-
-
-
+      if($item->cant != 1){
+        $item->cant--;
+        $item->save();
+      } else{
+        $item->delete();
+      }
       return redirect('/carrito');
     }
 }
