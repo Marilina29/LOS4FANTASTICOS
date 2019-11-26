@@ -52,17 +52,16 @@
         </tr>
         <tr>
           <td class="cierreCarro">
-            <div class="SeguirComprando">
-              <a href="/lista-productos"><button class="SeguirComprando" type="button" name="button">SEGUIR COMPRANDO</button></a>
-              <form class="" action="#" method="post">
-                {{ csrf_field() }}
-                <button class="SeguirComprando" type="submit" name="button">COMPRAR</button>
-              </form>
-            </div>
-          </td>
+            </t
         </tr>
       </table>
-
+        <div class="botSumarItem">
+          <a href="/lista-productos"><button class="" type="button" name="button">SEGUIR COMPRANDO</button></a>
+          <form class="" action="#" method="post">
+            {{ csrf_field() }}
+            <button class="" type="submit" name="button">COMPRAR</button>
+          </form>
+        </div>
     </div>
   </div>
 </div>

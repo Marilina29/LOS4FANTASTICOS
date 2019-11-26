@@ -36,7 +36,6 @@ class CarritoController extends Controller
 
         $item = new Order;
         $item->name=$product->name;
-        $item->description=$product->description;
         $item->price=$product->price;
       //  $item->img=$product->img;
         $item->status=0;
