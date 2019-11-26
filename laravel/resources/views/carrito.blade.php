@@ -44,8 +44,9 @@
           <td class="tdPrecio">$ {{$order->price}}</td>
 
         </tr>
+
           @php
-            $total += $order->price;
+            $total += $order->price * $order->cant;
           @endphp
         @endforeach
         <tr>
@@ -63,7 +64,7 @@
         </td>
         </tr>
       </table>
-      
+
     </div>
   </div>
 </div>
