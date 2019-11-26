@@ -23,7 +23,9 @@
           <div class="prodComprado"><img class="imagProdComprado" src="/storage/imagenes/{{$item->img}}" alt="">
           </div>
           <div class="dataComprado">
-            Producto: {{$item->name}} <br>Precio: {{$item->price}}
+            Producto: {{$item->name}}
+            <br>Precio: {{$item->price}}
+            <br>Cantidad: {{$item->cant}}
 
           </div>
         @endforeach
