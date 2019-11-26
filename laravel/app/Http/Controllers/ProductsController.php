@@ -16,7 +16,7 @@ class ProductsController extends Controller
      */
     public function index()
     {
-    $products = Product::paginate(15);
+    $products = Product::inRandomOrder()->paginate(15);
     $categories = Category::all();
 
     $vac = compact('products', 'categories');

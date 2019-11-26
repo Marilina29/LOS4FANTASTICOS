@@ -40,5 +40,5 @@
   @endif
 </div>
 
-{{-- <script src="{{ asset('js/elimino.js') }}" defer></script> --}}
+
 @endsection
