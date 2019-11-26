@@ -633,6 +633,13 @@ font-size: 16px;
   padding: 10px 10px 0px 0px;
   width: 10%;
 }
+
+/*historia*/
+.imagHistoria{
+  width: 100%;
+}
+
+
 /* tablet*/
 @media (max-width:800px){
 main{

@@ -49,3 +49,7 @@ Route::post('/eliminoProducto/{id}', 'ProductsController@destroy')->middleware('
 Route::post('/masUno', 'CarritoController@masUno')->middleware('auth');
 
 Route::post('/cartclose', 'CarritoController@cartclose');
+
+Route::get('/historia', function(){
+  return view('historia');
+});
