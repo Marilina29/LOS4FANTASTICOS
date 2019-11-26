@@ -28,10 +28,10 @@
 </div>
 <div class="botSumarItem">
   @if(Auth::user()->rol == 100)
-      <form class="" action="/eliminoProducto/{{$product->id}}" method="post">
+      <form class="" action="/eliminoProducto" method="post">
         @csrf
         <input type="hidden" name="id" value={{$product->id}}>
-        <button class="admin" type="submit" name="button">ELIMINO PRODUCTO</button>
+        <button class="admin eliminoProd" type="submit" name="button">ELIMINO PRODUCTO</button>
       </form>
 
       <a href="/agregoProducto">
@@ -39,4 +39,6 @@
       </a>
   @endif
 </div>
+
+{{-- <script src="{{ asset('js/elimino.js') }}" defer></script> --}}
 @endsection

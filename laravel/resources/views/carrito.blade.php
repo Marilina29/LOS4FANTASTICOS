@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+
+
 <div class="contenItem">
   <div class="baseCarrito">
     <div>
@@ -68,4 +70,6 @@
     </div>
   </div>
 </div>
+
+
 @endsection

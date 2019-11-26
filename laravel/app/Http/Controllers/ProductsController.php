@@ -111,9 +111,9 @@ class ProductsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request)
     {
-        $product = Product::find($id);
+        $product = Product::find($request->id);
         $product->delete();
         return redirect('/');
     }

@@ -44,7 +44,7 @@ Route::post('/sacarCarrito', 'CarritoController@delete')->middleware('auth');
 
 Route::get('/perfil', 'UsersController@index')->middleware('auth');
 
-Route::post('/eliminoProducto/{id}', 'ProductsController@destroy')->middleware('auth')->middleware('roles');
+Route::post('/eliminoProducto', 'ProductsController@destroy')->middleware('auth')->middleware('roles');
 
 Route::post('/masUno', 'CarritoController@masUno')->middleware('auth');
 
