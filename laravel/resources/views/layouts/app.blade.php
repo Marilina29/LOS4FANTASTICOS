@@ -29,7 +29,7 @@
 <div class="topnav" id="myTopnav">
     <a class="logo active" href="/"> <img src="/imagenes/glassBeat-logo.png" width="150" height="50"  alt="GlassBeat"> </a>
 <a class="aheader" href="/lista-productos"> SHOP </a>
-<a class="aheader" href="historia.php"> HISTORIA </a>
+<a class="aheader" href="/historia"> HISTORIA </a>
  <a class="aheader" href="mailto:marilina_29@hotmail.com"> CONTACTO </a>
 <a class="aheader" href="index.php#envios"> ENVIOS </a>
 
