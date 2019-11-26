@@ -41,7 +41,7 @@
 
         </td>
 
-          <td class="tdPrecio">$ {{$order->price}}</td>
+          <td class="tdPrecio">$ {{$order->price * $order->cant}}</td>
 
         </tr>
 
