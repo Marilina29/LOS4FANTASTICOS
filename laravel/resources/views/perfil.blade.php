@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div>
+<div class="contenItem">
   {{-- @foreach ($carrito as $key => $value)
     <div class="">
       <ul>
@@ -14,17 +14,23 @@
       </ul>
     </div>
   @endforeach --}}
-  <div class="">
+  <div class="baseItem listaCompra">
 
     @foreach ($orders as $items)
-      <h3>N° de compra: {{$items[0]->order_number}}</h3>
-      <ul>
+      <h3 class="numCompra">N° de compra: {{$items[0]->order_number}}</h3>
+<div class="conjComprados">
         @foreach ($items as $item)
-          <li>Nombre de Producto: {{$item->name}}</li>
-        @endforeach
-      </ul>
-    @endforeach
+          <div class="prodComprado"><img class="imagProdComprado" src="/storage/imagenes/{{$item->img}}" alt="">
+          </div>
+          <div class="dataComprado">
+            Producto: {{$item->name}} <br>Precio: {{$item->price}}
 
+          </div>
+        @endforeach
+</div>
+<hr>
+    @endforeach
+</div>
   </div>
 
 </div>

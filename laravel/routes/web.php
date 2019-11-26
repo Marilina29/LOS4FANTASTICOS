@@ -46,3 +46,5 @@ Route::get('/perfil', 'UsersController@index')->middleware('auth');
 Route::post('/eliminoProducto/{id}', 'ProductsController@destroy')->middleware('auth')->middleware('roles');
 
 Route::post('/masUno', 'CarritoController@masUno')->middleware('auth');
+
+Route::post('/cartclose', 'CarritoController@cartclose');

@@ -20,7 +20,7 @@
   </div>
   <div class="botSumarItem">
     <form class="" action="/agregarCarrito" method="post">
-      {{ csrf_field() }}
+      @csrf
       <input type="hidden" name="id" value={{$product->id}}>
       <button class="sumarItem" type="submit" name="button">AGREGAR AL CARRITO</button>
     </form>
@@ -29,10 +29,14 @@
 <div class="botSumarItem">
   @if(Auth::user()->rol == 100)
       <form class="" action="/eliminoProducto/{{$product->id}}" method="post">
-        {{ csrf_field() }}
+        @csrf
         <input type="hidden" name="id" value={{$product->id}}>
         <button class="admin" type="submit" name="button">ELIMINO PRODUCTO</button>
       </form>
+
+      <a href="/agregoProducto">
+        <button class="admin" type="submit" name="button">AGREGAR PRODUCTO</button>
+      </a>
   @endif
 </div>
 @endsection

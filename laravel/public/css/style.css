@@ -510,6 +510,8 @@ h6{
   width: 100%;
   text-align: end;
   padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
 }
 .cerrarItem{
   text-align: right;
@@ -525,12 +527,15 @@ h6{
   padding: 10px 20px;
   margin-top: 10px;
   margin-right: 25px;
+  margin-bottom: 50px;
   font-size: 14px;
   background-color: lightcoral;
 }
 
 /*carrito*/
-
+table{
+  width: 100%;
+}
 .itemCarro{
   width: 100%;
   padding: 10px;
@@ -565,12 +570,12 @@ h6{
   justify-content: center;
 }
 .eliminoSumo {
-    display: inline-block;
-    padding: 1px 12px;
-    border: 2px solid #666;
-    font-size: 28px;
-    margin: 0px 20px;
-    border-radius: 50%;
+  padding: 1px 12px;
+  font-size: 28px;
+  display: inline-block;
+  margin: 0px 20px;
+  border-radius: 50%;
+  border: none;
 }
 .cierreCarro {
     display: flex;
@@ -587,6 +592,46 @@ margin-left: 10px;
 padding: 10px 20px;
 display: flex;
 font-size: 16px;
+}
+.finCarrito{
+  display: flex;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: flex-end;
+}
+.finalCarro{
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #666;
+  margin: 10px 0px 60px 0px;
+  font-size: 16px;
+}
+/*perfil*/
+.conjComprados{
+  display: flex;
+  flex-wrap: wrap;
+}
+.imagProdComprado{
+  width: 100%;
+}
+.prodComprado{
+  width: 10%;
+  padding: 10px;
+}
+.numCompra{
+  width: 100%;
+  padding: 0px 0px 10px 10px;
+}
+.listaCompra{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.dataComprado{
+  text-align: left;
+  padding: 10px 10px 0px 0px;
+  width: 10%;
 }
 /* tablet*/
 @media (max-width:800px){
@@ -651,6 +696,12 @@ footer ul{
 
 
 }
+.formregistro {
+    margin: 0px 40px;
+    padding: 100px 0 50px;
+    width: 90%;
+}
+
 .formulario input {
     margin: 15px;
     padding: 15px;
@@ -717,8 +768,8 @@ h6{
 .sumarItem {
     bottom: 57px;
 }
-  .descrItem {
-    margin: 40px 0;
+.descrItem {
+    margin: 29px 0;
 }
 .admin {
     margin: 10px 20px;
@@ -727,13 +778,23 @@ h6{
   transform: translate(0%, -154%);
 }
 .contenItem {
-    padding: 60px 40px 0 40px;
+    padding: 80px 40px 0 40px;
 }
 
 .baseCarrito{
   padding-top: 20px;
 }
+.imagItem hr {
+    margin: 10px 0px;
+}
+/*perfil*/
 
+.prodComprado{
+  width: 25%;
+}
+.dataComprado{
+  width: 25%;
+}
 }
 
 
@@ -848,7 +909,9 @@ div.categorias a p{
   height: 0vh;
 }
 /*REGISTRO*/
-
+.formregistro {
+    margin: 0px 20px;
+}
 div.botones {
   padding-top: 20px;
   margin: 0 auto;
@@ -878,9 +941,6 @@ form button.boton, .cabecera {
 ::placeholder {
   color: white;
   font-size: 20px;
-}
-.formulario{
-  width: 100%;
 }
 ul.dropdown.search {
     top: 13px;
@@ -921,17 +981,40 @@ a.aheader {
 /*ficha*/
 
 .contenItem {
-    padding: 65px 15px 0 15px;
+  padding: 65px 15px 0 15px;
 }
 .descrItem {
-    line-height: 26px;
-    font-size: 16px;
-    margin: 20px 0;
+  line-height: 26px;
+  font-size: 16px;
+  margin: 20px 0;
 }
 .imagItem hr{
   margin: 16px 0px;
 }
 .precioItem {
-    margin-bottom: 61px;
+  margin-bottom: 61px;
+}
+/*carrito*/
+h3 {
+  font-size: 18px;
+}
+.eliminoSumo{
+  margin: 0px 5px;
+  padding: 0 8px;
+  border: none;
+  font-size: 26px;
+}
+/*perfil*/
+.conjComprados {
+  flex-direction: column;
+}
+.dataComprado {
+  padding: 0px 10px 14px 10px;
+}
+.prodComprado{
+  width: 100%;
+}
+.dataComprado{
+  width: 100%;
 }
 }

@@ -24,19 +24,22 @@
           <td class="tdNombre"> <h3>{{$order->name}}</h3></td>
           <td class="tdPrecio1">$ {{$order->price}}</td>
           <td class="tdCantidad">
+
+          <form class="" action="/sacarCarrito" method="post">
+            {{ csrf_field() }}
+            <input type="hidden" name="id" value="{{$order->id}}">
+            <button class="eliminoSumo" type="submit" name="button">-</button>
+          </form>
+
+          {{$order->cant}}
+
           <form class="" action="/masUno" method="post">
             {{ csrf_field() }}
             <input type="hidden" name="id" value={{$order->id}}>
             <button class="eliminoSumo" type="submit" name="button">+</button>
           </form>
 
-            {{$order->cant}}
-
-          <form class="" action="/sacarCarrito" method="post">
-            {{ csrf_field() }}
-            <input type="hidden" name="id" value="{{$order->id}}">
-            <button class="eliminoSumo" type="submit" name="button">-</button>
-          </form></td>
+        </td>
 
           <td class="tdPrecio">$ {{$order->price}}</td>
 
@@ -50,18 +53,17 @@
             TOTAL: {{$total}}
           </td>
         </tr>
-        <tr>
-          <td class="cierreCarro">
-            </t
+      <tr>
+        <td class="finCarrito">
+          <a href="/lista-productos"><button class="finalCarro" type="button" name="button">SEGUIR COMPRANDO</button></a>
+          <form class="" action="/cartclose" method="post">
+            @csrf
+            <button class="finalCarro" type="submit" name="button">PAGAR</button>
+          </form>
+        </td>
         </tr>
       </table>
-        <div class="botSumarItem">
-          <a href="/lista-productos"><button class="" type="button" name="button">SEGUIR COMPRANDO</button></a>
-          <form class="" action="#" method="post">
-            {{ csrf_field() }}
-            <button class="" type="submit" name="button">COMPRAR</button>
-          </form>
-        </div>
+      
     </div>
   </div>
 </div>

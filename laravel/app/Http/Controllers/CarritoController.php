@@ -37,11 +37,10 @@ class CarritoController extends Controller
         $item = new Order;
         $item->name=$product->name;
         $item->price=$product->price;
-      //  $item->img=$product->img;
+        $item->img=$product->img;
         $item->status=0;
         $item->user_id=Auth::user()->id;
         $item->product_id=$product->id;
-        $item->img=$product->img;
 
         $item->save();
       }
@@ -67,5 +66,20 @@ class CarritoController extends Controller
         $item->delete();
       }
       return redirect('/carrito');
+    }
+
+    public function cartclose(Request $req){
+
+      $items = Order::where("user_id", Auth::user()->id)->where("status",0)->get();
+      $order_number = Order::max('order_number') +1;
+
+      foreach($items as $item){
+        $item->status = 1;
+        $item->order_number = $order_number;
+        $item->save();
+      }
+
+      return redirect('/');
+
     }
 }
