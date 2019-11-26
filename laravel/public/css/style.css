@@ -635,6 +635,9 @@ font-size: 16px;
 }
 /* tablet*/
 @media (max-width:800px){
+main{
+  height: 100vh;
+}
 .aheader{
   font-size: 0.9rem;
 }
