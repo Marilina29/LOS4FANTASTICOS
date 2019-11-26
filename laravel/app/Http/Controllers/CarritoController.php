@@ -27,7 +27,8 @@ class CarritoController extends Controller
 
     public function store(Request $request){
 
-      $order = Order::where('product_id', '=', $request->id)->first();
+
+      $order = Order::where('product_id', '=', $request->id)->where('user_id', Auth::user()->id)->first();
       if($order){
         $order->cant++;
         $order->save();
