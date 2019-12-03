@@ -16,7 +16,7 @@ class ProductsController extends Controller
      */
     public function index()
     {
-    $products = Product::inRandomOrder()->paginate(15);
+    $products = Product::inRandomOrder()->paginate(10);
     $categories = Category::all();
 
     $vac = compact('products', 'categories');
@@ -121,14 +121,14 @@ class ProductsController extends Controller
     public function search(){
     $search = $_GET["search"];
     $categories = Category::all();
-    $products = Product::where('name', 'like', "%$search%")->paginate(15);
+    $products = Product::where('name', 'like', "%$search%")->paginate(10);
     $products->withPath('?search=' . $_GET["search"]);
     $vac = compact('products', 'categories');
     return view('products', $vac);
     }
 
     public function filtrar($id){
-      $products = Product::where('category_id', '=', $id)->paginate(15);
+      $products = Product::where('category_id', '=', $id)->paginate(10);
       $categories = Category::all();
       $vac = compact('products', 'categories');
       return view('products', $vac);

@@ -355,7 +355,7 @@ p.errores{
 }
 
 .uCProducto{
-  width: 80%;
+  width: 85%;
 }
 .mainProds{
     display: flex;
@@ -633,7 +633,12 @@ font-size: 16px;
   padding: 10px 10px 0px 0px;
   width: 10%;
 }
-
+.dataComprandoTotal{
+    text-align: right;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
 /*historia*/
 .imagHistoria{
   width: 100%;
@@ -749,7 +754,9 @@ ul.dropdown.search {
   display: flex;
 }
 
-.topnav.responsive {position: relative;}
+.topnav.responsive {
+  position: relative;
+}
 .topnav.responsive .icon {
     position: absolute;
     right: -22px;
@@ -830,7 +837,7 @@ h6{
     height: 45px;
   }
   ul li ul.dropdown {
-    right: 103px;
+    right: 107px;
     top: 10px;
     background-color: black;
   }
@@ -843,7 +850,7 @@ h6{
 /*contenido*/
 
   h1{
-    padding: 154px 0 0 0;
+    padding: 193px 0 0 0;
     font-size: 2rem;
     line-height: 2rem;
     margin-left: 20px;
@@ -908,6 +915,8 @@ h6{
 }
 .fondoCont{
   top: 37px;
+    width: 120%;
+    right: 0;
 }
 div.categorias a p{
   position: relative;
@@ -964,16 +973,17 @@ aside{
   top: 70px;
   left:auto;
   text-align: center;
-  width: 100%;
+  width: 96%;
 }
-aside ul{
-
-  display: flex;
-  flex-direction: row;
+aside ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 10px;
 }
 aside li a{
-  font-size: 16px;
-  padding-right: 10px;
+    font-size: 20px;
 }
 .uCProducto{
   width: 100%;
@@ -985,8 +995,16 @@ aside li a{
 .topnav {
     padding: 10px;
 }
+
+.topnav.responsive {
+  flex-direction: column;
+}
+.topnav.responsive .icon {
+    right: -15px;
+    top: 10px;
+}
 a.aheader {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
 }
 /*ficha*/
 
@@ -1023,8 +1041,22 @@ h3 {
 }
 .prodComprado{
   width: 100%;
+	padding: 10px 0px;
 }
 .dataComprado{
   width: 100%;
+	padding: 10px 0;
+}
+
+.numCompra {
+	padding: 8px 0px 10px 10px;
+    background-color: #bbb1af;
+}
+	ul.pagination {
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+	.botSumarItem .admin {
+    transform: translate(7%, -75%);
 }
 }

@@ -53,3 +53,7 @@ Route::post('/cartclose', 'CarritoController@cartclose');
 Route::get('/historia', function(){
   return view('historia');
 });
+
+Route::get('/instalar',function(){
+	Artisan::call("storage:link");
+});
